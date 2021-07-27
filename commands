@@ -1,2 +1,9 @@
 # change directory
 cd {folder_name}
+
+# install laravel app
+composer create-project laravel/laravel
+--prefer-dist {app_name}
+
+composer create-project laravel/laravel
+--prefer-dist test
