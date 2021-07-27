@@ -31,3 +31,6 @@ note :
 controller name should be on camelcase
 
 php artisan make:controller TestController
+
+#blade 
+{view_name}.blade.php
