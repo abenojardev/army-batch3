@@ -16,8 +16,3 @@ Route::get('/test/2', [
     TestController::class,
     'test_two'
 ]);
- 
-Route::get('/home', [
-    TestController::class,
-    'home'
-]);
