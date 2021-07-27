@@ -23,3 +23,11 @@ database - scripts on our database integration
 config - configuration file
 bootstrap - laravel setup
 app - brain ng application
+
+#create a controller
+php artisan make:controller {ControllerName}
+
+note : 
+controller name should be on camelcase
+
+php artisan make:controller TestController
