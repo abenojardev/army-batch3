@@ -7,3 +7,6 @@ composer create-project laravel/laravel
 
 composer create-project laravel/laravel
 --prefer-dist test
+
+# run laravel app
+php artisan serve
