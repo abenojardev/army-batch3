@@ -10,3 +10,16 @@ composer create-project laravel/laravel
 
 # run laravel app
 php artisan serve
+
+# app structure
+.env - storage of variables and values
+vendor - storage of packages
+tests - tests scripts
+storage - storage
+routes - contains the declaration of urls in your app
+resources - views
+public - storage as public 
+database - scripts on our database integration
+config - configuration file
+bootstrap - laravel setup
+app - brain ng application
