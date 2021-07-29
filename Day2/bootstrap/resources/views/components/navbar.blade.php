@@ -2,6 +2,11 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img width="40px" src="https://cdn.freebiesupply.com/logos/large/2x/panda-express-logo-1-logo-png-transparent.png" alt=""> 
+      <b>
+        <i>
+          PANDA EXPRESS CMS
+        </i>
+      </b>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
