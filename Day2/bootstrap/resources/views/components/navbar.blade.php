@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img width="40px" src="https://cdn.freebiesupply.com/logos/large/2x/panda-express-logo-1-logo-png-transparent.png" alt=""> 
+      <img width="40px" src="http://assets.stickpng.com/images/58419d0aa6515b1e0ad75a6c.png" alt=""> 
       <b>
         <i>
-          PANDA EXPRESS CMS
+          LAKERS ELITE
         </i>
       </b>
     </a>
