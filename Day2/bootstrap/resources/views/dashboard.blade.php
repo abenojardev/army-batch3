@@ -23,9 +23,9 @@
         </div>
         <div id="content" class="col-9 p-4">
             <ol>
-            @for($i=0; $i<=100; $i++)
-                <li>conten # {{ $i }}</li>
-            @endfor
+                @for($i=0; $i<=100; $i++)
+                    <li>content # {{ $i }}</li>
+                @endfor
             </ol>
         </div>
     </div>
