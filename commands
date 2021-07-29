@@ -37,3 +37,11 @@ php artisan make:controller TestController
 
 # show routes
 $ php artisan route:list
+
+# Things to do when you download laravel on github
+1. composer install
+2. copy .env.example to .env
+3. generate token
+
+# Generate token
+$ php artisan key:generate
