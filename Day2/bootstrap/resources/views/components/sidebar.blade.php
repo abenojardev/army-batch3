@@ -37,18 +37,3 @@
     </li>
   </ul> 
 </div>
-
-<style>
-  #sidebar{
-    height: 100vh;
-  }
-  body{
-    overflow: hidden;
-  }
-  #content{
-    overflow-y: scroll;
-  }
-  ::-webkit-scrollbar{
-    display: none;
-  }
-</style>

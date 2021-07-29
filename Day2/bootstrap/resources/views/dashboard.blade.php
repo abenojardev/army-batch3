@@ -22,11 +22,7 @@
             @include('components.sidebar')
         </div>
         <div id="content" class="col-9 p-4">
-            <ol>
-                @for($i=0; $i<=100; $i++)
-                    <li>content # {{ $i }}</li>
-                @endfor
-            </ol>
+            {{-- coding for content --}}
         </div>
     </div>
 
@@ -35,6 +31,9 @@
 
 
     <style>
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            background-color: #ffc007;
+        } 
         #sidebar{
           height: 100vh;
         }
