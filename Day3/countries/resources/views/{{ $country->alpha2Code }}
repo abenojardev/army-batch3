@@ -1,0 +1,5 @@
+{{ $country->alpha2Code }}
+{{ $country->name }}
+{{ $country->region }}
+{{ $country->subregion }}
+{{ $country->population }}

@@ -8,3 +8,9 @@ Route::get('/', [
     CountryController::class,
     'index'
 ])->name('country');
+
+
+Route::get('/table', [
+    CountryController::class,
+    'table'
+])->name('table');

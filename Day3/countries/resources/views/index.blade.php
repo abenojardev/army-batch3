@@ -10,38 +10,10 @@
 </head>
 <body>
     
-    <div class="row p-5">
-
-        @foreach($countries as $key => $country)
-            <div class="col-2 pb-2">
-                <div class="card">
-                    <a data-bs-toggle="modal" data-bs-target="#country_{{ $key }}" >
-                        <img src="{{ $country->flag }}" class="card-img-top" alt="...">
-                    </a>  
-                    <div class="card-body"> 
-                        <p class="card-text">
-                            <marquee>{{ $country->name }}</marquee>
-                        </p> 
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="country_{{ $key }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content"> 
-                    <div class="modal-body">
-                        <img src="{{ $country->flag }}" width="100%">
-                    </div> 
-                </div>
-                </div>
-            </div>
-        @endforeach
-
-    </div>
-
-    <!-- JavaScript Bundle with Popper -->
-
+    <div class="row p-5"> 
+        @each('components.cards', $countries, 'country')
+    </div> 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
