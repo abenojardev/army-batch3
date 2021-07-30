@@ -54,4 +54,21 @@ class BladeController extends Controller
             'name' => 'john doe'
         ]);
     }
+
+    public function loops()
+    {
+        $fruits = [
+            'Apple',
+            'Oranges',
+            'Watermelon',
+            'Dragon Fruit',
+            'Strawberry',
+            'Lime',
+            'Lemon',
+            'Jackfruit'
+        ];
+
+        return view('loops')
+            ->withFruits($fruits);
+    }
 }

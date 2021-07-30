@@ -23,3 +23,9 @@ Route::get('/conditions',[
     BladeController::class,
     'conditions'
 ])->name('conditions');
+
+
+Route::get('/loops',[
+    BladeController::class,
+    'loops'
+])->name('loops');
