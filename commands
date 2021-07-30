@@ -28,9 +28,7 @@ app - brain ng application
 php artisan make:controller {ControllerName}
 
 note : 
-controller name should be on camelcase
-
-php artisan make:controller TestController
+controller name should be on camelcase  
 
 #blade 
 {view_name}.blade.php
