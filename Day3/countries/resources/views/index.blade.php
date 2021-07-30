@@ -10,17 +10,34 @@
 </head>
 <body>
     
-    <div class="row">
-        <div class="col-1">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="row p-5">
+
+        @foreach($countries as $key => $country)
+            <div class="col-2 pb-2">
+                <div class="card">
+                    <a data-bs-toggle="modal" data-bs-target="#country_{{ $key }}" >
+                        <img src="{{ $country->flag }}" class="card-img-top" alt="...">
+                        <div class="card-body"> 
+                            <p class="card-text">
+                                {{ $country->name }}   
+                            </p> 
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="country_{{ $key }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <img src="{{ $country->flag }}" width="100%">
+                    </div> 
+                </div>
+                </div>
+            </div>
+        @endforeach
+
     </div>
 
     <!-- JavaScript Bundle with Popper -->
