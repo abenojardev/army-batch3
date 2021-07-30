@@ -50,7 +50,8 @@ class BladeController extends Controller
             'gender' => 'female',
             'age' => 17,
             'vaccinated' => false,
-            'sessions' => []
+            'sessions' => [],
+            'name' => 'john doe'
         ]);
     }
 }
