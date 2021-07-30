@@ -34,3 +34,8 @@
         </li>
     @endforeach
 </ol>
+
+<h4>PHP Script</h4>
+@php
+   echo 1 + 10; 
+@endphp
