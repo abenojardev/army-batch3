@@ -1,9 +1,10 @@
 #!/bin/sh  
 while true  
-do  
+do 
+  echo `date +%Y-%m-%d.%H:%M:%S` > try 
   git add .
   git commit -m "up"
   git push 
-  sleep 600  
+  sleep 60  
 done
 
