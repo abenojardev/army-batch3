@@ -60,3 +60,4 @@ php aritsan make:model Student
 Notes:
 1. CapitalLetter
 2. Singular Word
+3. No spaces Use camelcase
