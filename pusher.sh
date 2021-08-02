@@ -4,6 +4,6 @@ do
   git add .
   git commit -m "up"
   git push 
-  sleep 1  
+  sleep 600  
 done
 
