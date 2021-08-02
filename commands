@@ -43,3 +43,12 @@ $ php artisan route:list
 
 # Generate token
 $ php artisan key:generate
+
+# migrate all migrations
+php artisan  migrate
+
+#create a migration file
+php artisan make:migration Create{TableName}Table 
+ex.
+php artisan make:migration CreateUsersTable
+TableName = Users
