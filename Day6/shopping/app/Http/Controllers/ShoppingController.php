@@ -25,10 +25,10 @@ class ShoppingController extends Controller
     public function create()
     {
         return Product::create([
-            'product_name' => '',
-            'brand' => '',
-            'category' => '',
-            'price' => ''
+            'product_name' => 'N95 Masks (1 pack)',
+            'brand' => 'MeadJohnson & Johnson',
+            'category' => 'Medical Supply',
+            'price' => 105.95
         ]);
     }
 
