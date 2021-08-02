@@ -25,7 +25,10 @@ class ShoppingController extends Controller
     public function create()
     {
         return Product::create([
-
+            'product_name' => '',
+            'brand' => '',
+            'category' => '',
+            'price' => ''
         ]);
     }
 
