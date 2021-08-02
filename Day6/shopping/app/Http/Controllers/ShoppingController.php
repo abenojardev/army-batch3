@@ -10,8 +10,8 @@ class ShoppingController extends Controller
     /**
      * DB TRANSACTIONS
      * -------------------
-     * View data
-     * Create data
+     * View data _ DONE
+     * Create data _ DONE
      * Delete a data
      * Update a data
      */
