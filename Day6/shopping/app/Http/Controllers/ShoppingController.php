@@ -24,17 +24,19 @@ class ShoppingController extends Controller
     
     public function create()
     {
+        return Product::create([
 
+        ]);
     }
-    
+
     public function update()
     {
 
     }
-    
+
     public function delete()
     {
 
     }
-    
+
 }
