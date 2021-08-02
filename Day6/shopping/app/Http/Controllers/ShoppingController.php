@@ -18,7 +18,7 @@ class ShoppingController extends Controller
     public function index()
     {
         return dd(
-
+            Product::all()
         );
     }
 }
