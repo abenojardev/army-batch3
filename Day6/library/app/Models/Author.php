@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Author extends Model
 {
     use HasFactory;
+    // name table
+    protected $table = 'authors';
+    
+    //fields
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'middle_name',
+        'country',
+        'birth_date'
+    ];
 }
