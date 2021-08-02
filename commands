@@ -52,3 +52,11 @@ php artisan make:migration Create{TableName}Table
 ex.
 php artisan make:migration CreateUsersTable
 TableName = Users
+
+#create model
+php artisan make:model {ModelName}
+ex.
+php aritsan make:model Student
+Notes:
+1. CapitalLetter
+2. Singular Word
