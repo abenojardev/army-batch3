@@ -51,6 +51,31 @@ class GenerateModel extends Command
         return $this->info($name);
     }
 
+
+    public function generateModel()
+    {
+        $template = '<?php';
+        $template = '\n'; 
+        $template .= 'namespace App\Models;';
+
+        use Illuminate\Database\Eloquent\Factories\HasFactory;
+        use Illuminate\Database\Eloquent\Model;
+
+        class Album extends Model
+        {
+            use HasFactory;
+
+            protected $table = 'albums';
+            
+            protected $fillable = [
+                'name',
+                'date_released',
+            ];
+            
+        }
+
+    }
+
     public function generateName()
     {
         $model_name = '';
