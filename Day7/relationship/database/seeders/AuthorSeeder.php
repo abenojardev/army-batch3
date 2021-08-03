@@ -21,5 +21,12 @@ class AuthorSeeder extends Seeder
                 Author::LOCATION
             )
         ]);
+ 
+        Author::create([
+            'name' => 'Charles Dickens',
+            'location' => array_rand(
+                Author::LOCATION
+            )
+        ]);
     }
-}
+ 
