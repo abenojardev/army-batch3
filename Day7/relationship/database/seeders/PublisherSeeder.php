@@ -14,6 +14,9 @@ class PublisherSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Publisher::create([
+            'code' => '',
+            'name' => ''
+        ]);
     }
 }
