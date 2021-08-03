@@ -24,9 +24,16 @@ class AuthorSeeder extends Seeder
  
         Author::create([
             'name' => 'Charles Dickens',
+            // random item in LOCATION array
             'location' => array_rand(
                 Author::LOCATION
             )
+        ]);
+ 
+        Author::create([
+            'name' => 'Mark Twain',
+            // EUROPE
+            'location' => Author::LOCATION[1]
         ]);
     }
  
