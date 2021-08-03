@@ -52,7 +52,7 @@ class GenerateModel extends Command
     }
 
 
-    public function generateModel()
+    public function generateModel($tableName, $className, $fillable)
     {
         $template = '<?php';
         $template .= '\n\n'; 
@@ -70,10 +70,8 @@ class GenerateModel extends Command
             $template .= "    protected $fillable = [";
             $template .= "        'name',";
             $template .= "        'date_released',";
-            $template .= '    ]";
-            
-        $template .= '}';
-
+            $template .= '    ]'; 
+        $template .= '}'; 
     }
 
     public function generateName()
