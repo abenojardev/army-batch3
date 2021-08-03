@@ -15,6 +15,15 @@ class CreateAuthorsTable extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->enum('location',[
+                'Asia',
+                'Europe',
+                'Africa',
+                'Australia',
+                'US',
+                'Russia'
+            ]);
             $table->timestamps();
         });
     }
