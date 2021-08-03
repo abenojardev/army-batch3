@@ -55,14 +55,16 @@ class GenerateModel extends Command
     public function generateModel()
     {
         $template = '<?php';
-        $template = '\n'; 
-        $template .= 'namespace App\Models;';
+        $template .= '\n\n'; 
+        $template .= 'namespace App\Models;'; 
+        $template .= '\n\n'; 
+        $template .= 'use Illuminate\Database\Eloquent\Factories\HasFactory';
+        $template .= '\n'; 
+        $template .= 'use Illuminate\Database\Eloquent\Model';
+        $template .= '\n\n'; 
 
-        use Illuminate\Database\Eloquent\Factories\HasFactory;
-        use Illuminate\Database\Eloquent\Model;
-
-        class Album extends Model
-        {
+        $template .= 'class Album extends Model';
+        $template .= '{';
             use HasFactory;
 
             protected $table = 'albums';
@@ -72,7 +74,7 @@ class GenerateModel extends Command
                 'date_released',
             ];
             
-        }
+        $template .= '}';
 
     }
 
