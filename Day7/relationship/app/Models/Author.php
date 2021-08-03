@@ -17,4 +17,13 @@ class Author extends Model
         'name',
         'location'
     ];
+
+    const LOCATION = [
+        'Asia',
+        'Europe',
+        'Africa',
+        'Australia',
+        'US',
+        'Russia'
+    ];
 }
