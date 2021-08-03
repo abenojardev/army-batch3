@@ -36,4 +36,4 @@ class AuthorSeeder extends Seeder
             'location' => Author::LOCATION[1]
         ]);
     }
- 
+}

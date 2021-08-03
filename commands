@@ -68,3 +68,9 @@ php artisan make:seeder {Tablename}Seeder
 
 ex.
 php artisan make:seeder UserSeederx
+
+# run seeder
+php artisan db:seed --class={ClassName}
+
+ex.
+php artisan db:seed --class=AuthorSeeder
