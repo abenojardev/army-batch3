@@ -9,9 +9,13 @@ class Song extends Model
 {
     use HasFactory;
 
-    protected $table = 'genre';
+    protected $table = 'songs';
     
     protected $fillable = [
-        'genre'
+        'title',
+        'genre_id',
+        'artist_id',
+        'album_id',
     ];
+    
 }

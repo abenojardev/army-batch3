@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Album;
 
 class AlbumSeeder extends Seeder
 {
@@ -13,6 +14,9 @@ class AlbumSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Album::create([
+            'name',
+            'date_released',
+        ]);
     }
 }
