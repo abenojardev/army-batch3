@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Str;
+use Str, DB, Artisan;
 
 class GenerateModel extends Command
 {
@@ -36,21 +36,22 @@ class GenerateModel extends Command
     public function handle()
     {
         if(empty($this->argument('table'))){
-            return self::NO_TABLE_SELECTED;
+            return $this->error(self::NO_TABLE_SELECTED);
         }
         
         $table = DB::getSchemaBuilder()->getColumnListing($this->argument('table'));
 
         if(empty($table)){
-            return self::TABLE_NOT_EXISTS;
+            return $this->error(self::TABLE_NOT_EXISTS);
         }
 
+        $name = $this->generateName();
         
 
-        return ;
+        return $this->info($name);
     }
 
-    public function generateName($table)
+    public function generateName()
     {
         $model_name = '';
         $name = Str::singular($this->argument('table'));
