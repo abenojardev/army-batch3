@@ -71,8 +71,8 @@ class GenerateModel extends Command
         $template .= 'class '.$className.' extends Model';
         $template .= '{';
             $template .= '    use HasFactory;';
-            $template .= "    protected $table = '".$tableName."';"; 
-            $template .= "    protected $fillable = [";
+            $template .= '    protected $table = "'.$tableName.'";'; 
+            $template .= '    protected $fillable = [';
             foreach($fillable as $x){ 
                 $template .= "        '".$x."',"; 
             }
@@ -84,11 +84,8 @@ class GenerateModel extends Command
 
     public function createFile($template, $className)
     {
-        $myfile = fopen("app/Models/".$className.".php", "w") or die("Unable to open file!");
-        $txt = "John Doe\n";
-        fwrite($myfile, $txt);
-        $txt = "Jane Doe\n";
-        fwrite($myfile, $txt);
+        $model = fopen("app/Models/".$className."_.php", "w") or die("Unable to open file!"); 
+        fwrite($model, $template); 
         fclose($myfile);
     }
 
