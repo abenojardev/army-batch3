@@ -14,6 +14,15 @@ class ArtistSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Artist::create([
+            'first_name' => 'Chito',
+            'last_name' => 'Miranda',
+            'band' => 'Parokya ni Edgar',
+        ]);
+        Artist::create([
+            'first_name' => 'Sarah',
+            'last_name' => 'Geronimo',
+            'band' => 'Kamikazee',
+        ]);
     }
 }
