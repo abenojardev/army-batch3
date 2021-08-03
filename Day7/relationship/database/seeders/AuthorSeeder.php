@@ -15,6 +15,9 @@ class AuthorSeeder extends Seeder
     public function run()
     {
         // create 
-        Author::create();
+        Author::create([
+            'name' => 'William Shakespeare',
+            'location' => 
+        ]);
     }
 }
