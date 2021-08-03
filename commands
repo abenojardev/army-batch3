@@ -74,3 +74,7 @@ php artisan db:seed --class={ClassName}
 
 ex.
 php artisan db:seed --class=AuthorSeeder
+
+
+// test relationship
+SELECT books.title,books.category,books.date_published, authors.name as author, authors.location, publishers.name as publisher FROM books inner join authors on books.author_id = authors.id inner join publishers on books.publisher_id = publishers.id
