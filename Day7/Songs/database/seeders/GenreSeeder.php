@@ -20,5 +20,8 @@ class GenreSeeder extends Seeder
         Genre::create([
             'genre' => 'Pop'
         ]);
+        Genre::create([
+            'genre' => 'Classical'
+        ]);
     }
 }

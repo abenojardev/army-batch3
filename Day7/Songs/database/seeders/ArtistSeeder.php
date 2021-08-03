@@ -24,5 +24,10 @@ class ArtistSeeder extends Seeder
             'last_name' => 'Geronimo',
             'band' => 'Kamikazee',
         ]);
+        Artist::create([
+            'first_name' => 'Mike',
+            'last_name' => 'Enriquez',
+            'band' => 'Soco',
+        ]);
     }
 }
