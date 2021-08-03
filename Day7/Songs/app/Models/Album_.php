@@ -1,0 +1,1 @@
+<?php\n\nnamespace App\Models;\n\nuse Illuminate\Database\Eloquent\Factories\HasFactory\nuse Illuminate\Database\Eloquent\Model\n\nclass Album extends Model{    use HasFactory;    protected $table = "albums";    protected $fillable = [        'created_at',        'date_released',        'id',        'name',        'updated_at',    ]}

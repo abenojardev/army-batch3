@@ -86,7 +86,7 @@ class GenerateModel extends Command
     {
         $model = fopen("app/Models/".$className."_.php", "w") or die("Unable to open file!"); 
         fwrite($model, $template); 
-        fclose($myfile);
+        fclose($model);
     }
 
     public function generateName()
