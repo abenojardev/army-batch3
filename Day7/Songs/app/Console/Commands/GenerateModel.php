@@ -18,7 +18,7 @@ class GenerateModel extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Generates a model';
 
     /**
      * Create a new command instance.
