@@ -63,27 +63,27 @@ class GenerateModel extends Command
         $template .= "\n\n"; 
         $template .= 'namespace App\Models;'; 
         $template .= "\n\n"; 
-        $template .= 'use Illuminate\Database\Eloquent\Factories\HasFactory';
+        $template .= 'use Illuminate\Database\Eloquent\Factories\HasFactory;';
         $template .= "\n"; 
-        $template .= 'use Illuminate\Database\Eloquent\Model';
+        $template .= 'use Illuminate\Database\Eloquent\Model;';
         $template .= "\n\n"; 
 
         $template .= 'class '.$className.' extends Model';
         $template .= "\n"; 
         $template .= '{';
-        $template .= "\n\n"; 
+        $template .= "\n"; 
             $template .= '    use HasFactory;';
-            $template .= "\n"; 
+            $template .= "\n\n"; 
             $template .= '    protected $table = "'.$tableName.'";'; 
-            $template .= "\n"; 
+            $template .= "\n\n"; 
             $template .= '    protected $fillable = [';
-            $template .= "\n"; 
+            $template .= "\n\n"; 
             foreach($fillable as $x){ 
                 $template .= "        '".$x."',"; 
                 $template .= "\n"; 
             }
             $template .= "\n"; 
-            $template .= '    ]'; 
+            $template .= '    ];'; 
             $template .= "\n\n"; 
         $template .= '}'; 
 
