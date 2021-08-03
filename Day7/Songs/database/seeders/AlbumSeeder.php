@@ -15,8 +15,16 @@ class AlbumSeeder extends Seeder
     public function run()
     {
         Album::create([
-            'name',
-            'date_released',
+            'name' => 'Blue Horizon',
+            'date_released' => '2020/12/01',
+        ]);
+        Album::create([
+            'name' => 'Sunset Cream',
+            'date_released' => '2019/08/25',
+        ]);
+        Album::create([
+            'name' => 'Cranberry',
+            'date_released' => '1964/06/15',
         ]);
     }
 }
