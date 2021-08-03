@@ -60,23 +60,31 @@ class GenerateModel extends Command
     public function generateModel($tableName, $className, $fillable)
     {
         $template = '<?php';
-        $template .= '\n\n'; 
+        $template .= "\n\n"; 
         $template .= 'namespace App\Models;'; 
-        $template .= '\n\n'; 
+        $template .= "\n\n"; 
         $template .= 'use Illuminate\Database\Eloquent\Factories\HasFactory';
-        $template .= '\n'; 
+        $template .= "\n"; 
         $template .= 'use Illuminate\Database\Eloquent\Model';
-        $template .= '\n\n'; 
+        $template .= "\n\n"; 
 
         $template .= 'class '.$className.' extends Model';
+        $template .= "\n"; 
         $template .= '{';
+        $template .= "\n\n"; 
             $template .= '    use HasFactory;';
+            $template .= "\n"; 
             $template .= '    protected $table = "'.$tableName.'";'; 
+            $template .= "\n"; 
             $template .= '    protected $fillable = [';
+            $template .= "\n"; 
             foreach($fillable as $x){ 
                 $template .= "        '".$x."',"; 
+                $template .= "\n"; 
             }
+            $template .= "\n"; 
             $template .= '    ]'; 
+            $template .= "\n\n"; 
         $template .= '}'; 
 
         return $this->createFile($template, $className);
@@ -84,7 +92,7 @@ class GenerateModel extends Command
 
     public function createFile($template, $className)
     {
-        $model = fopen("app/Models/".$className."_.php", "w") or die("Unable to open file!"); 
+        $model = fopen("app/Models/".$className.".php", "w") or die("Unable to open file!"); 
         fwrite($model, $template); 
         fclose($model);
     }
