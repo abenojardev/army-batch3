@@ -45,13 +45,21 @@ class GenerateModel extends Command
             return self::TABLE_NOT_EXISTS;
         }
 
+        
+
+        return ;
+    }
+
+    public function generateName($table)
+    {
+        $model_name = '';
         $name = Str::singular($this->argument('table'));
         $model_name_arr = Str::of($name)->explode('_');
-        $model_name = '';
-        
+
         foreach($model_name_arr as $x){
-            $model_name 
+            $model_name .= Str::ucfirst(Str::lower($x));
         } 
-        return ;
+
+        return $model_name;
     }
 }
