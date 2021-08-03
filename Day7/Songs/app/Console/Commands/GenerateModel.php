@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Str;
 
 class GenerateModel extends Command
 {
@@ -45,7 +46,7 @@ class GenerateModel extends Command
         }
 
         $model_name = Str::singular($this->argument('table'));
-        
+        $model_name_arr = Str::of($model_name)->explode('_');
         return ;
     }
 }
