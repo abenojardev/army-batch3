@@ -16,10 +16,18 @@ class BookSeeder extends Seeder
     {
         Book::create([
             'title' => 'The Adventures of Tom Sawyer',
-            'category' => ,
-            'date_published' => ,
+            'category' => 'Novel',
+            'date_published' => '1876/06/01',
             'author_id' => 0,
             'publisher_id' => 0
-        ])
+        ]);
+
+        Book::create([
+            'title' => 'The Adventures of Tom Sawyer',
+            'category' => 'Novel',
+            'date_published' => '1876/06/01',
+            'author_id' => 0,
+            'publisher_id' => 0
+        ]);
     }
 }
