@@ -30,13 +30,18 @@ class GenerateModel extends Command
         parent::__construct();
     }
 
-    /**
-     * Execute the console command.
-     *
-     * @return int
-     */
+    const NO_TABLE_SELECTED = 'No table selected';
     public function handle()
     {
-        return 0;
+        if(!isset($this->argument('table'))){
+            return NO_TABLE_SELECTED;
+        }
+        
+        $table = DB::getSchemaBuilder()->getColumnListing($this->argument('table'));
+
+        if(empty($table)){
+            return ''
+        }
+        return ;
     }
 }
