@@ -11,7 +11,7 @@ class GenerateModel extends Command
      *
      * @var string
      */
-    protected $signature = 'g:model';
+    protected $signature = 'g:model {table}';
 
     /**
      * The console command description.
