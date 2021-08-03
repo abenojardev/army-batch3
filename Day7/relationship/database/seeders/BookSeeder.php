@@ -17,8 +17,8 @@ class BookSeeder extends Seeder
         Book::create([
             'title' => 'The Adventures of Tom Sawyer',
             'category' => 'Novel',
-            // yyyy/mm/dd
-            date('Y-m-d', strtotime('1876/06/01'))
+            //yyyy/mm/dd
+            //date('Y-m-d', strtotime('1876/06/01')) 
             'date_published' => '1876/06/01',
             'author_id' => 3,
             'publisher_id' => 2
