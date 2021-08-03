@@ -65,14 +65,12 @@ class GenerateModel extends Command
 
         $template .= 'class Album extends Model';
         $template .= '{';
-            use HasFactory;
-
-            protected $table = 'albums';
-            
-            protected $fillable = [
-                'name',
-                'date_released',
-            ];
+            $template .= '    use HasFactory;';
+            $template .= "    protected $table = 'albums';"; 
+            $template .= "    protected $fillable = [";
+            $template .= "        'name',";
+            $template .= "        'date_released',";
+            $template .= '    ]";
             
         $template .= '}';
 
