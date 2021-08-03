@@ -44,6 +44,8 @@ class GenerateModel extends Command
             return self::TABLE_NOT_EXISTS;
         }
 
+        $model_name = Str::singular($this->argument('table'));
+        
         return ;
     }
 }
