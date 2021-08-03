@@ -19,15 +19,15 @@ class BookSeeder extends Seeder
             'category' => 'Novel',
             'date_published' => '1876/06/01',
             'author_id' => 3,
-            'publisher_id' => 0
+            'publisher_id' => 2
         ]);
 
         Book::create([
             'title' => 'Romeo and Juliet',
             'category' => 'Romance',
             'date_published' => '1597/01/01',
-            'author_id' => 0,
-            'publisher_id' => 0
+            'author_id' => 1,
+            'publisher_id' => 3
         ]);
     }
 }
