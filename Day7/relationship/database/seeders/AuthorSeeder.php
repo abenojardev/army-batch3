@@ -17,7 +17,9 @@ class AuthorSeeder extends Seeder
         // create 
         Author::create([
             'name' => 'William Shakespeare',
-            'location' => Author::LOCATION
+            'location' => array_rand(
+                Author::LOCATION
+            )
         ]);
     }
 }
