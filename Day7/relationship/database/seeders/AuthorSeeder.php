@@ -17,7 +17,7 @@ class AuthorSeeder extends Seeder
         // create 
         Author::create([
             'name' => 'William Shakespeare',
-            'location' => 
+            'location' => Author::LOCATION
         ]);
     }
 }
