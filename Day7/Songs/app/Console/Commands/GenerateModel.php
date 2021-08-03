@@ -46,9 +46,14 @@ class GenerateModel extends Command
         }
 
         $name = $this->generateName();
-        
 
-        return $this->info($name);
+        $this->generateModel(
+            $this->argument('table'),
+            $this->generateName(),
+            $table
+        );
+
+        return $this->info('Model has been generated !');
     }
 
 
@@ -63,13 +68,14 @@ class GenerateModel extends Command
         $template .= 'use Illuminate\Database\Eloquent\Model';
         $template .= '\n\n'; 
 
-        $template .= 'class Album extends Model';
+        $template .= 'class '.$className.' extends Model';
         $template .= '{';
             $template .= '    use HasFactory;';
-            $template .= "    protected $table = 'albums';"; 
+            $template .= "    protected $table = '".$tableName."';"; 
             $template .= "    protected $fillable = [";
-            $template .= "        'name',";
-            $template .= "        'date_released',";
+            foreach($fillable as $x){ 
+                $template .= "        '".$x."',"; 
+            }
             $template .= '    ]'; 
         $template .= '}'; 
     }
