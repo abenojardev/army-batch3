@@ -79,12 +79,12 @@ class GenerateModel extends Command
             $template .= '    ]'; 
         $template .= '}'; 
 
-        return $template
+        return $this->createFile($template, $className);
     }
 
-    public function createFile()
+    public function createFile($template, $className)
     {
-        $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+        $myfile = fopen("app/Models/".$className.".php", "w") or die("Unable to open file!");
         $txt = "John Doe\n";
         fwrite($myfile, $txt);
         $txt = "Jane Doe\n";
