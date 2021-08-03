@@ -19,9 +19,9 @@ class CreateBooksTable extends Migration
             $table->string('category');
             $table->date('date_published');
 
-            $table->string('author_id');
-            $table->string('publisher_id');
-            
+            $table->unsignedBigInteger('author_id')->index();
+            $table->unsignedBigInteger('publisher_id')->index();
+
             $table->timestamps();
         });
     }
