@@ -61,3 +61,10 @@ Notes:
 1. CapitalLetter
 2. Singular Word
 3. No spaces Use camelcase
+
+
+# Create seeder file
+php artisan make:seeder {Tablename}Seeder
+
+ex.
+php artisan make:seeder UserSeederx
