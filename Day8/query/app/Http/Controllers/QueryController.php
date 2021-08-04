@@ -24,7 +24,7 @@ class QueryController extends Controller
     public function select()
     {
         return $this->output( 
-            Human::select('first_name', 'last_name')->get()
+            Human::select('first_name', 'last_name', 'gender')->get()
         );
     }
 
