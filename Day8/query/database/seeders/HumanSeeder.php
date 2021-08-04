@@ -25,10 +25,18 @@ class HumanSeeder extends Seeder
                 'birth_date' => $faker->date(),
                 'first_name' => $faker->name(),
                 'last_name' => $faker->name(),
-                'occupation' => '', 
-                'city' => '',
-                'civil_status' => '', 
-                'gender' => '', 
+                'occupation' => $faker->randomElement([
+                    'Self Employed', 'Student', 'Employed'
+                ]), 
+                'city' => $faker->randomElement(
+                    
+                ),
+                'civil_status' => $faker->randomElement(
+                    
+                ), 
+                'gender' => $faker->randomElement(
+                    
+                ), 
             ]);
         }
     }
