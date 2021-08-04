@@ -60,6 +60,13 @@ class QueryController extends Controller
         );
     }
 
+    public function orwhere()
+    {
+        return $this->output( 
+            Human::
+        );
+    }
+
     public function output($data)
     {
         return response()->json(
