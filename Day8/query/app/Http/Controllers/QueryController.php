@@ -8,6 +8,7 @@ class QueryController extends Controller
 {
     public function index($type = null)
     {
+        //method_exists(self, $type);
         return !is_null($type) ? 
             $this->$type() : 
             abort(404);
