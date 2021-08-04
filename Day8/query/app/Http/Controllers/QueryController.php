@@ -119,6 +119,14 @@ class QueryController extends Controller
             Human::avg('age')
         );
     }
+     
+    public function exists()
+    {
+        return $this->output( 
+            // number or date
+            Human::whereLastName('Dela Cruz')->exists()
+        );
+    }
     
 
     public function output($data)
