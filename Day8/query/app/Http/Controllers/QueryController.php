@@ -8,15 +8,14 @@ use App\Models\Human;
 class QueryController extends Controller
 {
     public function index($type = null)
-    {
-        //method_exists(self, $type);
-        return !is_null($type) ? 
+    { 
+        return !is_null($type) && method_exists($this, $type) ? 
             $this->$type() : 
             abort(404);
     }
     
     public function simple_query()
     {
-        
+        return Human::all();
     }
 }
