@@ -31,7 +31,7 @@ class QueryController extends Controller
     public function pluck()
     {
         return $this->output( 
-            Human::pluck('first_name')
+            Human::pluck('id')
         );
     }
 
