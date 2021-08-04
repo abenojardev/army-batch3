@@ -18,7 +18,7 @@ class HumanSeeder extends Seeder
 
         for($i=0; $i <= 100; $i++){
 
-            $faker = Faker\Factory::create();
+            $faker = \Faker\Factory::create();
             $gender = $faker->randomElement(
                 Human::GENDER
             );
