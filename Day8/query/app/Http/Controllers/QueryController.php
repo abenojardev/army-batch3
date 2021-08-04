@@ -103,6 +103,14 @@ class QueryController extends Controller
             Human::count()
         );
     }
+
+    public function sum()
+    {
+        return $this->output( 
+            // number or date
+            Human::sum('')
+        );
+    }
     
 
     public function output($data)
