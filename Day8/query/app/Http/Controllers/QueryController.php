@@ -28,6 +28,13 @@ class QueryController extends Controller
         );
     }
 
+    public function pluck()
+    {
+        return $this->output( 
+            Human::pluck('first_name')
+        );
+    }
+
     public function output($data)
     {
         return response()->json(
