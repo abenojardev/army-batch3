@@ -15,7 +15,14 @@ class CreateHumansTable extends Migration
     {
         Schema::create('humans', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('last_name');
+            $table->string('first_name');
+
+            $table->integer('age');
+            $table->enum('gender',[
+                'Male',
+                'Female'
+            ]);
         });
     }
 
