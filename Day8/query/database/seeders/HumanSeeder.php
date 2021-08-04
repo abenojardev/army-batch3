@@ -22,13 +22,13 @@ class HumanSeeder extends Seeder
 
             Human::create([
                 'age' => $faker->numberBetween(18, 60),
-                'birth_date' => '',
-                'city' => '',
-                'civil_status' => '', 
+                'birth_date' => $faker->date(),
                 'first_name' => '',
-                'gender' => '', 
                 'last_name' => '',
                 'occupation' => '', 
+                'city' => '',
+                'civil_status' => '', 
+                'gender' => '', 
             ]);
         }
     }
