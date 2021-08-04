@@ -13,6 +13,6 @@ class QueryController extends Controller
     
     public function simple_query()
     {
-        return dd('asd');
+        
     }
 }
