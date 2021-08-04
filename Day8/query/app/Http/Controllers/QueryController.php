@@ -124,7 +124,7 @@ class QueryController extends Controller
     {
         return $this->output( 
             // number or date
-            Human::whereLastName('Dela Cruz')->exists()
+            Human::where('last_name', '=', 'Harvey')->exists()
         );
     }
     
