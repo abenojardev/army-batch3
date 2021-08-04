@@ -65,6 +65,7 @@ class QueryController extends Controller
         return $this->output( 
             Human::where('civil_status', '=', 'Divorced')
                  ->orWhere('civil_status', '=', 'Widowed')
+                 ->get()
         );
     }
 
