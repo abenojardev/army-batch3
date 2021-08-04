@@ -23,6 +23,18 @@ class CreateHumansTable extends Migration
                 'Male',
                 'Female'
             ]);
+
+            $table->enum('city',[
+                'Taguig',
+                'Makati',
+                'Mandaluyong',
+                'San Juan',
+                'Quezon',
+                'Manila',
+                'Marikina',
+                'Antipolo',
+                'Valenzuela'
+            ]);
         });
     }
 
