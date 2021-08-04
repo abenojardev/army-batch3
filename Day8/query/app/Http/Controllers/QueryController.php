@@ -108,7 +108,7 @@ class QueryController extends Controller
     {
         return $this->output( 
             // number or date
-            Human::sum('')
+            Human::sum('age')
         );
     }
     
