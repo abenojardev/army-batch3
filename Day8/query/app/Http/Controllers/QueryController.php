@@ -16,8 +16,18 @@ class QueryController extends Controller
     
     public function simple_query()
     {
-        return dd(
+        return $this->output( 
             Human::all()
+        );
+    }
+
+    public function output($data)
+    {
+        return response()->json(
+            $data,
+            200,
+            [],
+            JSON_PRETTY_PRINT
         );
     }
 }
