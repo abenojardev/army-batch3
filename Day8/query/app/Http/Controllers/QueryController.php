@@ -89,7 +89,8 @@ class QueryController extends Controller
             Human::whereIn('city', [
                     'Valenzuela',
                     'Caloocan',
-                    'Paranaque'
+                    'Paranaque',
+                    'asd','asdasda'
                 ])
                 ->get()
         );
