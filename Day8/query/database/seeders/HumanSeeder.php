@@ -25,9 +25,7 @@ class HumanSeeder extends Seeder
                 'birth_date' => $faker->date(),
                 'first_name' => $faker->name(),
                 'last_name' => $faker->name(),
-                'occupation' => $faker->randomElement([
-                    'Self Employed', 'Student', 'Employed'
-                ]), 
+                'occupation' => $faker->jobTitle(), 
                 'city' => $faker->randomElement(
                     Human::CITY
                 ),
