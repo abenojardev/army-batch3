@@ -45,7 +45,9 @@ class QueryController extends Controller
     public function where()
     {
         return $this->output( 
-            Human::where('gender', '=', 'Female')
+            /** note it is best to use constants all the time */
+            /** Human::GENDER[1] */
+            Human::where('gender', '=', 'Female')->get()
         );
     }
 
