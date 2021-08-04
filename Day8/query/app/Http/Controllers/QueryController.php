@@ -69,6 +69,15 @@ class QueryController extends Controller
         );
     }
 
+
+    public function wherebetween()
+    {
+        return $this->output( 
+            Human::whereBetween()
+                ->get()
+        );
+    }
+
     public function output($data)
     {
         return response()->json(
