@@ -22,20 +22,20 @@ class HumanSeeder extends Seeder
             $gender = $faker->randomElement(
                 Human::GENDER
             );
-            
+
             Human::create([
+                'first_name' => $faker->firstName($gender),
+                'last_name' => $faker->lastName($gender),
+                'gender' => $gender,
                 'age' => $faker->numberBetween(18, 60),
                 'birth_date' => $faker->date(),
-                'first_name' => $faker->name(),
-                'last_name' => $faker->name(),
                 'occupation' => $faker->jobTitle(), 
                 'city' => $faker->randomElement(
                     Human::CITY
                 ),
                 'civil_status' => $faker->randomElement(
                     Human::CIVIL_STATUS
-                ), 
-                'gender' => $gender, 
+                ) 
             ]);
         }
     }
