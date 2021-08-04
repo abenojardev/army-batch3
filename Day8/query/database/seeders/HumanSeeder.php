@@ -29,13 +29,13 @@ class HumanSeeder extends Seeder
                     'Self Employed', 'Student', 'Employed'
                 ]), 
                 'city' => $faker->randomElement(
-                    
+                    Human::CITY
                 ),
                 'civil_status' => $faker->randomElement(
-                    
+                    Human::CIVIL_STATUS
                 ), 
                 'gender' => $faker->randomElement(
-                    
+                    Human::GENDER
                 ), 
             ]);
         }
