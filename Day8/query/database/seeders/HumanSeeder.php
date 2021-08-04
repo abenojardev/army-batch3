@@ -18,15 +18,14 @@ class HumanSeeder extends Seeder
 
         for($i=0; $i <= 100; $i++){
             Human::create([
-                'age',
-                'birth_date',
-                'city',
-                'civil_status', 
-                'first_name',
-                'gender',
-                'id',
-                'last_name',
-                'occupation', 
+                'age' => '',
+                'birth_date' => '',
+                'city' => '',
+                'civil_status' => '', 
+                'first_name' => '',
+                'gender' => '', 
+                'last_name' => '',
+                'occupation' => '', 
             ]);
         }
     }
