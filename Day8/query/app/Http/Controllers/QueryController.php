@@ -73,7 +73,7 @@ class QueryController extends Controller
     public function wherebetween()
     {
         return $this->output( 
-            Human::whereBetween('')
+            Human::whereBetween('age', [18, 26])
                 ->get()
         );
     }
