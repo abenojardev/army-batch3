@@ -19,7 +19,10 @@ class HumanSeeder extends Seeder
         for($i=0; $i <= 100; $i++){
 
             $faker = Faker\Factory::create();
-
+            $gender = $faker->randomElement(
+                Human::GENDER
+            );
+            
             Human::create([
                 'age' => $faker->numberBetween(18, 60),
                 'birth_date' => $faker->date(),
@@ -32,9 +35,7 @@ class HumanSeeder extends Seeder
                 'civil_status' => $faker->randomElement(
                     Human::CIVIL_STATUS
                 ), 
-                'gender' => $faker->randomElement(
-                    Human::GENDER
-                ), 
+                'gender' => $gender, 
             ]);
         }
     }
