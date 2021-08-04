@@ -18,7 +18,8 @@ class HumanSeeder extends Seeder
 
         for($i=0; $i <= 100; $i++){
 
-            $faker = new Faker\Factory;
+            $faker = Faker\Factory::create();
+            
             Human::create([
                 'age' => '',
                 'birth_date' => '',
