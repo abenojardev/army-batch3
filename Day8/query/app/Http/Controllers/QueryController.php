@@ -63,7 +63,8 @@ class QueryController extends Controller
     public function orwhere()
     {
         return $this->output( 
-            Human::
+            Human::where('civil_status', '=', 'Divorced')
+                 ->orWhere('civil_status', '=', 'Widowed')
         );
     }
 
