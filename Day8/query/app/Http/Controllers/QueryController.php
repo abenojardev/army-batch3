@@ -47,7 +47,10 @@ class QueryController extends Controller
         return $this->output( 
             /** Best to use constants all the time */
             /** Human::GENDER[1] */
-            Human::where('gender', '=', 'Female')->get()
+            /**
+             * where(column_name, operation, value)
+             */
+            Human::where('gender', '=', 'Male')->get()
         );
     }
 
