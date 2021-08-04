@@ -35,6 +35,13 @@ class QueryController extends Controller
         );
     }
 
+    public function find()
+    {
+        return $this->output( 
+            Human::find(56)
+        );
+    }
+
     public function output($data)
     {
         return response()->json(
