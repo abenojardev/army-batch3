@@ -16,6 +16,8 @@ class QueryController extends Controller
     
     public function simple_query()
     {
-        return Human::all();
+        return dd(
+            Human::all()
+        );
     }
 }
