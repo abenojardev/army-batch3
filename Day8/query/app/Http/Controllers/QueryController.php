@@ -49,8 +49,14 @@ class QueryController extends Controller
             /** Human::GENDER[1] */
             /**
              * where(column_name, operation, value)
+             * 
+             * operation
+             * =, !=, >, <, >= , <=, <>
+             * 
              */
-            Human::where('gender', '=', 'Male')->get()
+            Human::where('gender', '!=', 'Male')
+                   ->select('last_name')
+                   ->get()
         );
     }
 
