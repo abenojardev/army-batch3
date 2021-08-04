@@ -111,6 +111,14 @@ class QueryController extends Controller
             Human::sum('age')
         );
     }
+
+    public function avg()
+    {
+        return $this->output( 
+            // number or date
+            Human::avg('age')
+        );
+    }
     
 
     public function output($data)
