@@ -46,6 +46,8 @@ class CreateHumansTable extends Migration
                 'Married',
                 'Divorced'
             ]);
+            $table->string('occupation');
+            $table->timestamps();
         });
     }
 
