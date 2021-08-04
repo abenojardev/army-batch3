@@ -22,8 +22,7 @@ class CreateHumansTable extends Migration
             $table->enum('gender',[
                 'Male',
                 'Female'
-            ]);
-
+            ]); 
             $table->enum('city',[
                 'Taguig',
                 'Makati',
@@ -40,6 +39,13 @@ class CreateHumansTable extends Migration
                 'Novaliches',
                 'Muntinlupa'
             ]);
+            $table->date('birth_date');
+            $table->enum('status', [
+                'Single',
+                'Widowed',
+                'Married',
+                'Divorced'
+            ])
         });
     }
 
