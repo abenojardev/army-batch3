@@ -21,7 +21,7 @@ class HumanSeeder extends Seeder
             $faker = Faker\Factory::create();
 
             Human::create([
-                'age' => $faker->numberBetween(0, 60),
+                'age' => $faker->numberBetween(18, 60),
                 'birth_date' => '',
                 'city' => '',
                 'civil_status' => '', 
