@@ -40,12 +40,12 @@ class CreateHumansTable extends Migration
                 'Muntinlupa'
             ]);
             $table->date('birth_date');
-            $table->enum('status', [
+            $table->enum('civil_status', [
                 'Single',
                 'Widowed',
                 'Married',
                 'Divorced'
-            ])
+            ]);
         });
     }
 
