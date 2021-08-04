@@ -42,6 +42,11 @@ class QueryController extends Controller
         );
     }
 
+    public function where()
+    {
+        
+    }
+
     public function output($data)
     {
         return response()->json(
