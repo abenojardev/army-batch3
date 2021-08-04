@@ -8,7 +8,9 @@ class QueryController extends Controller
 {
     public function index($type = null)
     {
-        return !is_null($type) ? $this->$type() : abort(404);
+        return !is_null($type) ? 
+            $this->$type() : 
+            abort(404);
     }
     
     public function simple_query()
