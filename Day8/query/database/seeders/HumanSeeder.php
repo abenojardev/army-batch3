@@ -14,6 +14,12 @@ class HumanSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // 100 random
+
+        for($i=0; $i <= 100; $i++){
+            Human::create([
+
+            ]);
+        }
     }
 }
