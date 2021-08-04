@@ -86,8 +86,10 @@ class QueryController extends Controller
     {
         return $this->output( 
             // number or date
-            Human::whereIn('birth_date', [
-                
+            Human::whereIn('city', [
+                    'Valenzuela',
+                    'Caloocan',
+                    'Paranaque'
                 ])
                 ->get()
         );
