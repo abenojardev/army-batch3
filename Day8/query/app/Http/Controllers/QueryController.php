@@ -96,6 +96,15 @@ class QueryController extends Controller
         );
     }
 
+    public function count()
+    {
+        return $this->output( 
+            // number or date
+            Human::count()
+        );
+    }
+    
+
     public function output($data)
     {
         return response()->json(
