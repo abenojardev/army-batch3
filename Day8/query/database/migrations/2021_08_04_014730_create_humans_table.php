@@ -33,7 +33,12 @@ class CreateHumansTable extends Migration
                 'Manila',
                 'Marikina',
                 'Antipolo',
-                'Valenzuela'
+                'Valenzuela',
+                'Pasay',
+                'Paranaque',
+                'Caloocan',
+                'Novaliches',
+                'Muntinlupa'
             ]);
         });
     }
