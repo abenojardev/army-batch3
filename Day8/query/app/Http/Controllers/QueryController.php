@@ -10,4 +10,9 @@ class QueryController extends Controller
     {
         return !is_null($type) ? $this->$type() : abort(404);
     }
+    
+    public function simple_query()
+    {
+        return dd('asd');
+    }
 }
