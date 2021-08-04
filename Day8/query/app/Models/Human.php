@@ -27,4 +27,33 @@ class Human extends Model
 
     ];
 
+    const GENDER = [
+        'Male',
+        'Female'
+    ];
+
+    const CITY = [
+        'Taguig',
+        'Makati',
+        'Mandaluyong',
+        'San Juan',
+        'Quezon',
+        'Manila',
+        'Marikina',
+        'Antipolo',
+        'Valenzuela',
+        'Pasay',
+        'Paranaque',
+        'Caloocan',
+        'Novaliches',
+        'Muntinlupa'
+    ];
+
+    const CIVIL_STATUS = [
+        'Single',
+        'Widowed',
+        'Married',
+        'Divorced'
+    ];
+
 }
