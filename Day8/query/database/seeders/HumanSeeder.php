@@ -24,7 +24,7 @@ class HumanSeeder extends Seeder
                 'age' => $faker->numberBetween(18, 60),
                 'birth_date' => $faker->date(),
                 'first_name' => $faker->name(),
-                'last_name' => '',
+                'last_name' => $faker->name(),
                 'occupation' => '', 
                 'city' => '',
                 'civil_status' => '', 
