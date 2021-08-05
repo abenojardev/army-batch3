@@ -33,7 +33,7 @@ class TransactionController extends Controller
 
     public function update()
     {
-        $find = $this->user->find(1);
+        $find = $this->user->find(6);
 
         $find->update([
             'name' => 'John Jhon',
@@ -43,7 +43,7 @@ class TransactionController extends Controller
 
     public function delete()
     {
-        $find = $this->user->find(1);
+        $find = $this->user->find(6);
 
         $find->delete();
     }
