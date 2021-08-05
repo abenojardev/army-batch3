@@ -7,3 +7,8 @@ Route::get('/',[
     PersonnelController::class,
     'index'
 ])->name('home');
+
+Route::get('/create',[
+    PersonnelController::class,
+    'create'
+])->name('create');
