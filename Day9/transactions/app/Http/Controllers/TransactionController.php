@@ -36,7 +36,8 @@ class TransactionController extends Controller
         $find = $this->user->find(1);
 
         $find->update([
-            'name' => 'John Jhon'
+            'name' => 'John Jhon',
+            'email' => 'john@gmail.com'
         ]);
     }
 
