@@ -16,6 +16,9 @@ class TransactionController extends Controller
 
     public function view()
     {
+        return dd( 
+            $this->user->all()
+        );
     }
 
     public function create()
