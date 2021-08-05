@@ -25,6 +25,6 @@ class PersonnelController extends Controller
 
     public function create()
     {
-        return view('create')
+        return view('create');
     }
 }
