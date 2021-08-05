@@ -43,5 +43,6 @@ class TransactionController extends Controller
 
     public function delete()
     {
+        $find = $this->user->find(1);
     }
 }
