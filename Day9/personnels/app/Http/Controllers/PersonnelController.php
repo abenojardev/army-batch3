@@ -18,6 +18,8 @@ class PersonnelController extends Controller
     {
         $data = $this->personnel->all();
         
-        return view('index');
+        return view('index')->with([
+            'data' => $data
+        ]);
     }
 }
