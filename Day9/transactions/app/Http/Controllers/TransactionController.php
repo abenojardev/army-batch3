@@ -22,13 +22,13 @@ class TransactionController extends Controller
     }
 
     public function create()
-    {
+    { 
         return dd(  
             $this->user->create([
                 'name' => 'John Doe',
                 'email' => 'john.doe@gmail.com'
             ])
-        );
+        ); 
     }
 
     public function update()
