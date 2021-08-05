@@ -22,4 +22,9 @@ class PersonnelController extends Controller
             'data' => $data
         ]);
     }
+
+    public function create()
+    {
+        return view('create')
+    }
 }
