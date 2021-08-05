@@ -10,7 +10,9 @@
 </head>
 <body class="p-5">
     
-    <table class="table">
+    <a class="btn btn-success">Create Personnel</a>
+
+    <table class="table mt-5">
         <thead>
           <tr>
             <th scope="col">#</th>
