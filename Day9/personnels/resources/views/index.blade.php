@@ -10,7 +10,9 @@
 </head>
 <body class="p-5">
     
-    <a href="{{ URL::route('create') }}" class="btn btn-success">Create Personnel</a>
+    <a href="{{ URL::route('create') }}" class="btn btn-success">
+        Create Personnel
+    </a>
 
     <table class="table mt-5">
         <thead>
