@@ -25,18 +25,20 @@ class EventsController extends Controller
     }
     public function delete()
     {
-        
+        $this->event->find(1)->delete();
+
+    return Redirect::route('index');
     }
     public function create()
     {
         $this->event->create([ 
-            'title',
-            'location',
-            'date',
-            'description',
-            'entrance_fee',
+            'title' => 'Concert',
+            'location' => 'Manila City',
+            'date' => '2021/08/06',
+            'description' => 'lorem ipsum dolor nek akimat',
+            'entrance_fee' => 100.00,
         ]);
 
-        return Redirect::route('indesx');
+        return Redirect::route('index');
     }
 }
