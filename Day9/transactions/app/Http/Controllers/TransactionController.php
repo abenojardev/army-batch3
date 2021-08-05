@@ -25,8 +25,8 @@ class TransactionController extends Controller
     { 
         return dd(  
             $this->user->create([
-                'name' => 'John Doe',
-                'email' => 'john.doe@gmail.com'
+                'name' => 'Juan Dela Cruz',
+                'email' => 'juan.delacruz@gmail.com'
             ])
         ); 
     }
