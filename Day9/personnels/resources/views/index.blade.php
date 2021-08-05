@@ -29,10 +29,10 @@
                 <tr>
                     <th scope="row">{{ $person->id }}</th>
                     <td>{{ $person->first_name }}</td>
-                    <td>Otto</td>
-                    <td>Cyber</td>
-                    <td>PVT</td>
-                    <td>124124</td>
+                    <td>{{ $person->last_name }}</td>
+                    <td>{{ $person->division }}</td>
+                    <td>{{ $person->rank }}</td>
+                    <td>{{ $person->badge_number }}</td>
                     <td>
                         <a href="" class="btn btn-xs btn-warning">Update</a>
                         <a href="" class="btn btn-xs btn-danger">Delete</a>
