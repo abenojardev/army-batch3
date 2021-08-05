@@ -12,23 +12,23 @@
     <form>
         <div class="form-group mb-2">
             <label>First Name</label>
-            <input type="text" class="form-control"> 
+            <input type="text" class="form-control" name="first_name"> 
         </div>
         <div class="form-group mb-2">
             <label>Last Name</label>
-            <input type="text" class="form-control"> 
+            <input type="text" class="form-control" name="last_name"> 
         </div> 
         <div class="form-group mb-2">
             <label>Division</label>
-            <input type="text" class="form-control"> 
+            <input type="text" class="form-control" name="division"> 
         </div>
         <div class="form-group mb-2">
             <label>Rank</label>
-            <input type="text" class="form-control"> 
+            <input type="text" class="form-control" name="rank"> 
         </div>
         <div class="form-group mb-2">
             <label>Badge Number</label>
-            <input type="text" class="form-control"> 
+            <input type="text" class="form-control" name="badge_number"> 
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
