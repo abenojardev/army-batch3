@@ -27,8 +27,8 @@
         <tbody>
             @foreach($data as $person)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <th scope="row">{{ $person->id }}</th>
+                    <td>{{ $person->first_name }}</td>
                     <td>Otto</td>
                     <td>Cyber</td>
                     <td>PVT</td>
