@@ -13,9 +13,11 @@ class PersonnelController extends Controller
     {
         $this->personnel = $personnel;
     }
-    
+
     public function index()
     {
+        $data = $this->personnel->all();
+        
         return view('index');
     }
 }
