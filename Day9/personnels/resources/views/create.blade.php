@@ -11,9 +11,25 @@
 <body class="p-5"> 
     <form>
         <div class="form-group mb-2">
-            <label>Email address</label>
-            <input type="email" class="form-control"> 
+            <label>First Name</label>
+            <input type="text" class="form-control"> 
+        </div>
+        <div class="form-group mb-2">
+            <label>Last Name</label>
+            <input type="text" class="form-control"> 
         </div> 
+        <div class="form-group mb-2">
+            <label>Division</label>
+            <input type="text" class="form-control"> 
+        </div>
+        <div class="form-group mb-2">
+            <label>Rank</label>
+            <input type="text" class="form-control"> 
+        </div>
+        <div class="form-group mb-2">
+            <label>Badge Number</label>
+            <input type="text" class="form-control"> 
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
  
