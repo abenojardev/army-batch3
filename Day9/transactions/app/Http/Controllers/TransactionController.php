@@ -33,6 +33,7 @@ class TransactionController extends Controller
 
     public function update()
     {
+        $find = $this->user->find(1);
     }
 
     public function delete()
