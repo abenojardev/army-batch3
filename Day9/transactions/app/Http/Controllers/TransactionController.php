@@ -23,6 +23,12 @@ class TransactionController extends Controller
 
     public function create()
     {
+        return dd(  
+            $this->user->create([
+                'name' => '',
+                'email' => ''
+            ])
+        );
     }
 
     public function update()
