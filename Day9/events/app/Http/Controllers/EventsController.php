@@ -17,17 +17,23 @@ class EventsController extends Controller
 
     public function index()
     {
-        
+        return dd(
+            $this->event->all()
+        );
     }
     public function update()
     {
-        
+        $this->event->find(1)->update([  
+            'entrance_fee' => 200.00,
+        ]);
+
+        return Redirect::route('index');
     }
     public function delete()
     {
         $this->event->find(1)->delete();
 
-    return Redirect::route('index');
+        return Redirect::route('index');
     }
     public function create()
     {
