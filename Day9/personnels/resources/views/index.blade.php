@@ -25,18 +25,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>Cyber</td>
-                <td>PVT</td>
-                <td>124124</td>
-                <td>
-                    <a href="" class="btn btn-xs btn-warning">Update</a>
-                    <a href="" class="btn btn-xs btn-danger">Delete</a>
-                </td>
-            </tr>  
+            @foreach($data as $person)
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Cyber</td>
+                    <td>PVT</td>
+                    <td>124124</td>
+                    <td>
+                        <a href="" class="btn btn-xs btn-warning">Update</a>
+                        <a href="" class="btn btn-xs btn-danger">Delete</a>
+                    </td>
+                </tr>  
+            @endforeach
         </tbody>
     </table>
 
