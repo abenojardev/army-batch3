@@ -14,31 +14,31 @@
 
     <table class="table mt-5">
         <thead>
-          <tr>
-            <th scope="col">id</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Division</th>
-            <th scope="col">Rank</th>
-            <th scope="col">Badge Number</th>
-            <th scope="col"></th>
-          </tr>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Division</th>
+                <th scope="col">Rank</th>
+                <th scope="col">Badge Number</th>
+                <th scope="col"></th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Cyber</td>
-            <td>PVT</td>
-            <td>124124</td>
-            <td>
-                <a href="" class="btn btn-xs btn-warning">Update</a>
-                <a href="" class="btn btn-xs btn-danger">Delete</a>
-            </td>
-          </tr>  
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Cyber</td>
+                <td>PVT</td>
+                <td>124124</td>
+                <td>
+                    <a href="" class="btn btn-xs btn-warning">Update</a>
+                    <a href="" class="btn btn-xs btn-danger">Delete</a>
+                </td>
+            </tr>  
         </tbody>
-      </table>
+    </table>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
