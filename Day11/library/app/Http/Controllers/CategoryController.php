@@ -10,7 +10,7 @@ class CategoryController extends Controller
 
     public function __construct(Request $request)
     {
-        
+        $request = $request;
     }
 
     public function index()
