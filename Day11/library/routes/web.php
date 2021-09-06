@@ -31,3 +31,8 @@ Route::get('/category/create', [
     CategoryController::class,
     'create'
 ])->name('category.create');
+
+Route::post('/category/create', [
+    CategoryController::class,
+    'create_save'
+])->name('category.create.save');

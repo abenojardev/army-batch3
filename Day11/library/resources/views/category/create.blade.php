@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-12">
-                <form method="post">
+                <form method="post" >
                   @csrf
                   <div class="mb-3">
                     <label class="form-label">Name</label>
