@@ -28,10 +28,6 @@ class CategoryController extends Controller
     {
         Category::create(
             $this->request->except('_token')
-        );
-
-        Category::create([
-            'name' => $this->request->name
-        ]);
+        ); 
     }
 }
