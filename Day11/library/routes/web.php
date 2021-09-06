@@ -9,4 +9,4 @@ use App\Http\Controllers\CategoryController;
 Route::get('/', [
     BookController::class,
     'index'
-]);
+])->name('book.home');
