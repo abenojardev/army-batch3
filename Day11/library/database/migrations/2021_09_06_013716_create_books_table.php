@@ -27,6 +27,10 @@ class CreateBooksTable extends Migration
 
             $table->unsignedBigInteger('author_id')->index();
             $table->unsignedBigInteger('category_id')->index();
+
+            $table->foreign('author_id')
+                  ->references('id')
+                  ->on('author');
             
             $table->timestamps();
         });
