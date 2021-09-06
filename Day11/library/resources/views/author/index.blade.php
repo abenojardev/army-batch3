@@ -4,7 +4,8 @@
         <div class="row pt-5">
             <div class="col-12">
                 
-                <a href="" class="btn btn-primary">Add</a>
+                <a href="" class="btn btn-dark">Add New Author</a>
+                
                 <table class="table">
                     <thead>
                         <tr>
