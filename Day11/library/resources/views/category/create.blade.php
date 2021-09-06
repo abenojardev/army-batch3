@@ -4,6 +4,7 @@
         <div class="row pt-5">
             <div class="col-12">
                 <form>
+                  @csrf
                   <div class="mb-3">
                     <label class="form-label">Name</label>
                     <input type="text" class="form-control" name="name" required>
