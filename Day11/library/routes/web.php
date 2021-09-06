@@ -20,3 +20,14 @@ Route::get('/author/create', [
     AuthorController::class,
     'create'
 ])->name('author.create');
+
+
+Route::get('/category', [
+    CategoryController::class,
+    'index'
+])->name('category.home');
+
+Route::get('/category/create', [
+    CategoryController::class,
+    'create'
+])->name('category.create');
