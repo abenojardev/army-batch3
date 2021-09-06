@@ -6,7 +6,7 @@
                 <form>
                   <div class="mb-3">
                     <label class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name">
+                    <input type="text" class="form-control" name="name" required>
                   </div> 
                   <button class="btn btn-dark">
                     Save
