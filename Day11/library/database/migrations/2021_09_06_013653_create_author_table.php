@@ -23,6 +23,7 @@ class CreateAuthorTable extends Migration
              * field can be null
              */
             $table->string('middle_name')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -31,6 +31,7 @@ class CreateBooksTable extends Migration
             $table->longText('image');
             $table->longText('description');
 
+            $table->softDeletes();
             $table->timestamps();
         });
     }
