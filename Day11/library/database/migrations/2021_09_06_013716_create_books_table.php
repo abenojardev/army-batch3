@@ -14,15 +14,7 @@ class CreateBooksTable extends Migration
     public function up()
     {
         Schema::create('books', function (Blueprint $table) {
-            $table->id();
-            /**
-             * title
-             * author
-             * category
-             * image
-             * description
-             */
-
+            $table->id(); 
             $table->string('title');
 
             $table->unsignedBigInteger('author_id')->index();
@@ -36,6 +28,9 @@ class CreateBooksTable extends Migration
                   ->references('id')
                   ->on('category');
             
+            $table->longText('image');
+            $table->longText('description');
+
             $table->timestamps();
         });
     }
