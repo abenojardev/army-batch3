@@ -10,4 +10,9 @@ class AuthorController extends Controller
     {
         return view('author.index');
     }
+
+    public function create()
+    {
+        return view('author.create');
+    }
 }
