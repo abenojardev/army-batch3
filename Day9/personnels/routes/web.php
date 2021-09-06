@@ -12,3 +12,8 @@ Route::get('/create',[
     PersonnelController::class,
     'create'
 ])->name('create');
+
+Route::post('/create/save',[
+    PersonnelController::class,
+    'create_save'
+])->name('create_save');
