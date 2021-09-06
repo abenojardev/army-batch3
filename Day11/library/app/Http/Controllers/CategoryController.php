@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
+    protected $request;
+
+    public function __construct(Request $request)
+    {
+        
+    }
+
     public function index()
     {
         return view('category.index');
@@ -18,6 +25,6 @@ class CategoryController extends Controller
 
     public function create_save()
     {
-        
+
     }
 }
