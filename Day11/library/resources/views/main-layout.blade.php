@@ -24,7 +24,7 @@
                 <a class="nav-link" href="{{ URL::route('author.home') }}">Authors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Categories</a>
+                <a class="nav-link" href="{{ URL::route('category.home') }}">Categories</a>
               </li> 
             </ul>
           </div>
