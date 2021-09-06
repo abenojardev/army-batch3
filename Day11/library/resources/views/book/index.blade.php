@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="row pt-5">
-            <div class="col-3">
+            <div class="col-3 mb-2">
                 <div class="card">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
