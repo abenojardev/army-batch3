@@ -14,13 +14,15 @@ class CreateAuthorTable extends Migration
     public function up()
     {
         Schema::create('author', function (Blueprint $table) {
-            $table->id();
-            // first
-            // last
-            // middlename
-
+            $table->id(); 
             $table->string('first_name');
             $table->string('last_name');
+            /** 
+             * nullable()
+             * 
+             * field can be null
+             */
+            $table->string('middle_name')->nullable();
             $table->timestamps();
         });
     }
