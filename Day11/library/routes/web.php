@@ -15,3 +15,8 @@ Route::get('/author', [
     AuthorController::class,
     'index'
 ])->name('author.home');
+
+Route::get('/author/create', [
+    AuthorController::class,
+    'create'
+])->name('author.create');
