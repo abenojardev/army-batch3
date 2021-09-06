@@ -26,8 +26,12 @@ class CategoryController extends Controller
 
     public function create_save()
     {
-        dd(
-            $this->request->all()
+        Category::create(
+            $this->request->except('_token')
         );
+
+        Category::create([
+            'name' => $this->request->name
+        ]);
     }
 }
