@@ -5,10 +5,12 @@
             <div class="col-12">
                 <form>
                   <div class="mb-3">
-                    <label class="form-label">Email address</label>
-                    <input type="email" class="form-control">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control">
                   </div> 
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button class="btn btn-dark">
+                    Save
+                  </button>
                 </form>
             </div>
         </div>
