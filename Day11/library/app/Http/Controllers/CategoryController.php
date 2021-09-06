@@ -15,4 +15,9 @@ class CategoryController extends Controller
     {
         return view('category.create');
     }
+
+    public function create_save()
+    {
+        
+    }
 }
