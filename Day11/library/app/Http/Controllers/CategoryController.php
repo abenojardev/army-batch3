@@ -25,6 +25,8 @@ class CategoryController extends Controller
 
     public function create_save()
     {
-        
+        dd(
+            $this->request->all()
+        );
     }
 }
