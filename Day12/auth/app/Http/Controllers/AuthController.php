@@ -28,6 +28,6 @@ class AuthController extends Controller
     {
         $verify = Auth::attempt(
             $this->request->except('_token')
-        );
+        ); 
     }
 }
