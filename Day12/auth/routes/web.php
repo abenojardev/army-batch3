@@ -9,6 +9,11 @@ Route::get('/',[
     'index'
 ])->name('login')->middleware('guest');
 
+Route::post('/verify',[
+    AuthController::class,
+    'verify'
+])->name('verify')->middleware('guest');
+
 // restricted
 Route::get('/home',[
     AuthController::class,

@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row d-flex justify-content-center pt-5">
             <div class="col-6 bg-warning p-5">
-                <form>
+                <form method="post" action="">
                     @csrf
                     <h3 class="text-dark">Log In</h3>
                     <div class="mb-3">
