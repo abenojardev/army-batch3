@@ -39,5 +39,12 @@ class AuthController extends Controller
         $verify = Auth::attempt(
             $this->request->except('_token')
         ); 
+
+        if($verify){
+            return Redirect::route('home');
+        }
+
+        return Redirect::route('login')
+                ->withError('Wrong login credentials!');
     }
 }
