@@ -13,7 +13,7 @@ class AuthController extends Controller
     {
         $this->request = $request;
     }
-    
+
     public function index()
     {
         return view('index');
@@ -26,6 +26,8 @@ class AuthController extends Controller
 
     public function verify()
     {
-
+        $verify = Auth::attempt(
+            $this->request->except('_token')
+        );
     }
 }
