@@ -26,6 +26,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{ URL::route('category.home') }}">Categories</a>
               </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="{{ URL::route('logout') }}">Logout</a>
+              </li> 
             </ul>
           </div>
         </div>
