@@ -19,7 +19,20 @@ class BookController extends Controller
 
     public function index()
     {
-        return view('book.index');
+        $books = Book::select(
+                        'books.*', 
+                        'authors.first_name',
+                        'authors.last_name',
+                        'authors.middle_name',
+                        'category.name',
+                    )
+                    ->join('authors', 'authors.id', 'book.author_id')
+                    ->join('category', 'category.id', 'book.category_id')
+                    ->get();
+
+        dd($books);
+
+        return view('book.index')->withBooks($books);
     }
 
     public function create()
