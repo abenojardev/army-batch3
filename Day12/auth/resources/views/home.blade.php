@@ -17,7 +17,7 @@
                     Welcome User
                 </h3>
 
-                <a href="">Log Out</a>
+                <a href="{{ URL::route('logout') }}">Log Out</a>
             </div>
         </div>
     </div>
