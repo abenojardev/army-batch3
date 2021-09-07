@@ -11,20 +11,18 @@
             @foreach($books as $book)
                 <div class="col-3 mb-2">
                     <div class="card">
-                        <img src="{{ URL::asset('storage/'.$book->image) }}" class="card-img-top" alt="...">
+                        <img src="{{ URL::asset('storage/'.$book->image) }}" height="300px" width="100%" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">
-                                {{ $book->title }}
+                                {{ Str::limit($book->title, 20) }}
                             </h5>
                             <p class="card-text">
-                                {{ $book->description }} <br>
+                                {{ Str::limit($book->description, 48) }} <br>
 
-                                Author :  
-                                {{ $book->first_name }} 
-                                {{ $book->middle_name }} 
-                                {{ $book->last_name }} <br>
+                                <b>Author :</b>  
+                                {{ Str::limit($book->first_name.' '.$book->middle_name.' '.$book->last_name, 10) }} <br>
 
-                                Category: 
+                                <b>Category: </b>
                                 {{ $book->name }}
                             </p> 
                         </div>
