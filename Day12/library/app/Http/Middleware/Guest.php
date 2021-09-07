@@ -18,7 +18,7 @@ class Guest
     public function handle(Request $request, Closure $next)
     {
         if(Auth::check()){
-            return Redirect::route('home');
+            return Redirect::route('book.home');
         }
 
         return $next($request);
