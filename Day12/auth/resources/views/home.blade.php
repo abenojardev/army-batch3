@@ -12,10 +12,12 @@
 
     <div class="container">
         <div class="row d-flex justify-content-center pt-5">
-            <div class="col-6 bg-warning p-5">
-                <h3 class="text-center">
+            <div class="col-6 bg-warning p-5 text-center">
+                <h3>
                     Welcome User
                 </h3>
+
+                <a href="">Log Out</a>
             </div>
         </div>
     </div>
