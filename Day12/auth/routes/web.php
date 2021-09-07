@@ -19,3 +19,8 @@ Route::get('/home',[
     AuthController::class,
     'home'
 ])->name('home')->middleware('user');
+
+Route::get('/logout',[
+    AuthController::class,
+    'logout'
+])->name('logout')->middleware('user');
