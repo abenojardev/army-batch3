@@ -21,16 +21,14 @@ class BookController extends Controller
     {
         $books = Book::select(
                         'books.*', 
-                        'authors.first_name',
-                        'authors.last_name',
-                        'authors.middle_name',
+                        'author.first_name',
+                        'author.last_name',
+                        'author.middle_name',
                         'category.name',
                     )
-                    ->join('authors', 'authors.id', 'book.author_id')
-                    ->join('category', 'category.id', 'book.category_id')
-                    ->get();
-
-        dd($books);
+                    ->join('author', 'author.id', 'books.author_id')
+                    ->join('category', 'category.id', 'books.category_id')
+                    ->get(); 
 
         return view('book.index')->withBooks($books);
     }
