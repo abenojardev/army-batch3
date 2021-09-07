@@ -14,14 +14,15 @@
         <div class="row d-flex justify-content-center pt-5">
             <div class="col-6 bg-warning p-5">
                 <form>
+                    @csrf
                     <h3 class="text-dark">Log In</h3>
                     <div class="mb-3">
                         <label class="form-label">Email address</label>
-                        <input type="email" class="form-control" > 
+                        <input type="email" name="email" class="form-control" > 
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Password</label>
-                        <input type="password" class="form-control">
+                        <input type="password" name="password" class="form-control">
                     </div> 
                     <button type="submit" class="btn btn-dark">Log In</button>
                 </form>
