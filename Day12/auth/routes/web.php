@@ -7,10 +7,10 @@ use App\Http\Controllers\AuthController;
 Route::get('/',[
     AuthController::class,
     'index'
-])->name('login');
+])->name('login')->middleware('guest');
 
 // restricted
 Route::get('/home',[
     AuthController::class,
     'home'
-])->name('home');
+])->name('home')->middleware('user');
