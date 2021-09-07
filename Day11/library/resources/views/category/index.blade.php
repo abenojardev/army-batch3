@@ -12,18 +12,25 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Name</th> 
+                            <th scope="col">Actions</th> 
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td scope="row">1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr> 
+                        @foreach($category as $item)
+                            <tr>
+                                <td>{{ $item->id }}</td>
+                                <td>{{ $item->name }}</td> 
+                                <td>
+                                    <a href="{{ URL::route('category.update', $item->id) }}" class="btn btn-warning btn-sm">
+                                        Update
+                                    </a>
+                                    <a href="{{ URL::route('category.delete', $item->id) }}" class="btn btn-danger btn-sm">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        @endforeach 
                     </tbody>
                 </table>
             </div>

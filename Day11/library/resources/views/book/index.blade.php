@@ -2,6 +2,12 @@
 @section('content')
     <div class="container">
         <div class="row pt-5">
+            
+            <div class="col-3 mb-2">
+                <a href="{{ URL::route('book.create') }}" class="btn btn-sm btn-dark">Add new Book</a>
+            </div>
+            <div class="col-9"></div>
+
             <div class="col-3 mb-2">
                 <div class="card">
                     <img src="..." class="card-img-top" alt="...">

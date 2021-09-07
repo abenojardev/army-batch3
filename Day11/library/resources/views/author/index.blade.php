@@ -12,18 +12,29 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Middle Name</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td scope="row">1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr> 
+                        @foreach($author as $item)
+                            <tr> 
+                                <td>{{ $item->id }}</td>
+                                <td>{{ $item->first_name }}</td> 
+                                <td>{{ $item->last_name }}</td>
+                                <td>{{ $item->middle_name }}</td> 
+                                <td>
+                                    <a href="{{ URL::route('author.update', $item->id) }}" class="btn btn-sm btn-warning">
+                                        Update
+                                    </a>
+                                    <a href="{{ URL::route('author.delete', $item->id) }}" class="btn btn-sm btn-danger">
+                                        Delete
+                                    </a>
+                                </td> 
+                            </tr> 
+                        @endforeach
                     </tbody>
                 </table>
             </div>
