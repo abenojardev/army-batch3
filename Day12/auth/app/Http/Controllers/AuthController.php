@@ -26,6 +26,16 @@ class AuthController extends Controller
 
     public function verify()
     {
+        /**
+         * Auth @attempt()
+         * 
+         * @var Array
+         * @return true if the access is granted
+         *        creates session
+         * 
+         * @return false if the access invalid
+         *         does not create session
+         */
         $verify = Auth::attempt(
             $this->request->except('_token')
         ); 
