@@ -17,7 +17,15 @@
                                 {{ $book->title }}
                             </h5>
                             <p class="card-text">
-                                {{ $book->description }},
+                                {{ $book->description }} <br>
+
+                                Author :  
+                                {{ $book->first_name }} 
+                                {{ $book->middle_name }} 
+                                {{ $book->last_name }} <br>
+
+                                Category: 
+                                {{ $book->name }}
                             </p> 
                         </div>
                     </div>
