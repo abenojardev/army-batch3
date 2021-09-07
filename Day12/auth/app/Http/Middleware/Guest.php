@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Auth, Redirect;
 
 class Guest
 {
@@ -16,6 +17,10 @@ class Guest
      */
     public function handle(Request $request, Closure $next)
     {
+        if(Auth::check()){
+            return Redirect::route('home');
+        }
+
         return $next($request);
     }
 }
