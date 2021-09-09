@@ -51,6 +51,10 @@ class AuthController extends Controller
     
     public function login_verify()
     {
-        
+        if(Auth::attempt($this->request->except('_token'))){
+            return Redirect::route('homepage');
+        }
+
+        return back()->withError(true);
     }
 }
