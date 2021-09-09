@@ -12,9 +12,10 @@
             <!-- Example DataTables Card-->
             <div class="card mb-3">
                 <div class="card-header">
-                    <i class="fa fa-table"></i> Data Table Example
+                    Products List
                     
-                    <a href="{{ URL::route('admin.products.create') }}" class="btn btn-success pull-right">
+                    <a href="{{ URL::route('admin.products.create') }}" 
+                        class="btn btn-sm btn-success pull-right">
                         Create Product
                     </a>
                 </div>
