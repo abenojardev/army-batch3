@@ -30,6 +30,18 @@
                         <span class="nav-link-text">Products</span>
                     </a>
                 </li>  
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <a class="nav-link" href="{{ URL::route('admin.products') }}">
+                        <i class="fa fa-fw fa-folder"></i>
+                        <span class="nav-link-text">Orders</span>
+                    </a>
+                </li>  
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <a class="nav-link" href="{{ URL::route('admin.products') }}">
+                        <i class="fa fa-fw fa-cog"></i>
+                        <span class="nav-link-text">Logout</span>
+                    </a>
+                </li>  
             </ul>
             <ul class="navbar-nav sidenav-toggler">
                 <li class="nav-item">
