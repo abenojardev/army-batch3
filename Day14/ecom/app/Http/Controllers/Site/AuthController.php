@@ -16,7 +16,7 @@ class AuthController extends Controller
     {
         $this->request = $request;
     }
-    
+
     public function index()
     {
         return view('site.auth.login');
@@ -29,6 +29,10 @@ class AuthController extends Controller
 
     public function register_submit()
     {
+        $id = User::create(
+            $this->request->except('_token')
+        );
 
+        dd($id);
     }
 }
