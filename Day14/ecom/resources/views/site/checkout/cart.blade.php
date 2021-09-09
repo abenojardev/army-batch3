@@ -147,7 +147,7 @@
                                         </b><br>
 
                                         {{ $item->qty }}x {{ $item->name }}
-
+                                        <br><br>
                                     </li> 
                                 @endforeach
                             </ul>
