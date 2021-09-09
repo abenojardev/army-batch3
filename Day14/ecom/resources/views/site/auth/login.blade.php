@@ -12,9 +12,12 @@
                         <form action="{{ URL::route('login.verify') }}" method="post">
                             @csrf
 
-                            <p style="color: red;">
-                                Wrong Login Credentails!
-                            </p>
+                            @if(session('error'))
+                                <p style="color: red;">
+                                    Wrong Login Credentails!
+                                </p>
+                            @endif
+
 
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
