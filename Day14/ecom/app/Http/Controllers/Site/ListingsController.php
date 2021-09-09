@@ -29,18 +29,15 @@ class ListingsController extends Controller
         // check if session exists
         // create session / get session
         // product available 
-        // add to session
-
-        $cart = 'cart';
-        $session = $this->request->session();
-         
+        // add to session 
+        $cart = 'cart'; 
+         dd($this->request->session()->all());
         // if there is no cart 
-        if(!$session->has($cart)){
-            $session->put('cart', []);
+        if(!$this->request->session()->has($cart)){
+            $this->request->session()->put('cart', []);
         }
         
-        $current_cart = $session->get($cart);
-          dd($current_cart);
+        $current_cart = $this->request->session()->get($cart); 
         // if products exists 
         if(array_key_exists((integer) $id, $current_cart)){
             dd('plus');
@@ -51,10 +48,10 @@ class ListingsController extends Controller
             ];
         } 
 
-        $session->put($cart, $current_cart);
+        $this->request->session()->put($cart, $current_cart);
 
         dd(
-            $session->get($cart)
+            $this->request->session()->get($cart)
         );
     }
 }
