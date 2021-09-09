@@ -18,8 +18,9 @@ class ListingsController extends Controller
     public function index()
     {
         $product = Product::all();
+        
         return view('site.listing.index')->with([
-            'products' => 
+            'products' => $product
         ]);
     }
 }
