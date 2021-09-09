@@ -18,7 +18,9 @@ class ProductsController extends Controller
 
     public function index()
     {
-        return view('admin.products.index');
+        return view('admin.products.index')->with([
+            'products' => Product::all()
+        ]);
     }
 
     public function create()

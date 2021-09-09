@@ -37,7 +37,7 @@
                                 <input class="form-control" type="file" name="img" required>
                             </div> 
                             <div class="form-group">
-                                <button>Save</button>
+                                <button class="btn btn-sm btn-success">Save</button>
                             </div>
                         </form>
                     </div>

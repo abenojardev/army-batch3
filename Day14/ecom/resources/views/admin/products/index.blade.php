@@ -24,12 +24,11 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
+                                    <th></th>
                                     <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Price</th>
+                                    <th>Category</th>
+                                    <th>Price</th> 
+                                    <th></th>
                                 </tr>
                             </thead> 
                             <tbody>
