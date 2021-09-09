@@ -30,17 +30,17 @@ class ListingsController extends Controller
         // check if session exists
         // create session / get session
         // product available 
-        // add to session 
+        // add to session
+
         $cart = 'cart'; 
-        
-        // Cache::put('cart',[]);
-        dd(Cache::get('cart'));
+         
         // if there is no cart 
-        if(!$this->request->session()->has($cart)){
-            $this->request->session()->put('cart', []);
+        if(!Cache::has($cart)){
+            Cache::put('cart', []);
         }
         
-        $current_cart = $this->request->session()->get($cart); 
+        $current_cart = Cache::get($cart); 
+
         // if products exists 
         if(array_key_exists((integer) $id, $current_cart)){
             dd('plus');
@@ -51,10 +51,10 @@ class ListingsController extends Controller
             ];
         } 
 
-        $this->request->session()->put($cart, $current_cart);
+        Cache::put($cart, $current_cart);
 
         dd(
-            $this->request->session()->get($cart)
+            Cache::get($cart)
         );
     }
 }
