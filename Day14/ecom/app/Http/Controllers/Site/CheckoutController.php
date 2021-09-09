@@ -17,7 +17,7 @@ class CheckoutController extends Controller
         foreach($cart as $product_id => $item){
             $product = Product::find($product_id);
 
-            $product->qty = $item->qty;
+            $product->qty = $item['qty'];
 
             array_push($items, $product);
         }
