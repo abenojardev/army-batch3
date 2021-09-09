@@ -11,3 +11,8 @@ Route::get('/register', [
     AuthController::class,
     'register'
 ])->name('register');
+
+Route::post('/register/submit', [
+    AuthController::class,
+    'register_submit'
+])->name('register.submit');

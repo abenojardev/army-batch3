@@ -9,7 +9,7 @@
                         <div class="modal_header">
                             <h3>Register Account</h3>
                         </div>
-                        <form method="post" action="{{ URL::route('register') }}">
+                        <form method="post" action="{{ URL::route('register.submit') }}">
                             @csrf
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
