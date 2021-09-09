@@ -34,22 +34,26 @@
                     <li>
 						<a href="{{ URL::route('homepage') }}">Home</a>
 					</li> 
-                    <li>
-						<a href="#">Orders</a>
-					</li>
-                    <li>
-						<a href="{{ URL::route('logout') }}">
-							Cart  
-						</a> 
-					</li>  
-                    <li>
-						<a href="{{ URL::route('checkout') }}">
-							Cart  
-						</a> 
-					</li>  
-                    <li>
-						<a href="{{ URL::route('login') }}">Login</a>
-					</li> 
+
+					@if(Auth::check())
+						<li>
+							<a href="#">Orders</a>
+						</li> 
+						<li>
+							<a href="{{ URL::route('checkout') }}">
+								Cart  
+							</a> 
+						</li>  
+						<li>
+							<a href="{{ URL::route('logout') }}">
+								Logout  
+							</a> 
+						</li> 
+					@else
+						<li>
+							<a href="{{ URL::route('login') }}">Login</a>
+						</li> 
+					@endif
                 </ul>
             </nav>
         </div>
