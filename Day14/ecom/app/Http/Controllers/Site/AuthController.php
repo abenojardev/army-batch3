@@ -29,10 +29,12 @@ class AuthController extends Controller
 
     public function register_submit()
     {
-        $id = User::create(
+        $user = User::create(
             $this->request->except('_token')
         );
+ 
+        Auth::loginUsingId($user->id);
 
-        dd($id);
+        return Redirect::route('homepage');
     }
 }
