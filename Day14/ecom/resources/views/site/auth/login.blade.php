@@ -10,6 +10,7 @@
                             <h3>Sign In</h3>
                         </div>
                         <form>
+                            @csrf
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
                                     <label>Email</label>
@@ -17,7 +18,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" class="form-control" name="password" id="password" value=""> 
+                                    <input type="password" class="form-control" name="password" id="password"> 
                                 </div>
                                 <div class="clearfix add_bottom_15">
                                     <div class="checkboxes float-left">
