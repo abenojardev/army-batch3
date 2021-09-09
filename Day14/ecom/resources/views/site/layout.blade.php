@@ -53,6 +53,9 @@
 						<li>
 							<a href="{{ URL::route('login') }}">Login</a>
 						</li> 
+						<li>
+							<a href="{{ URL::route('register') }}">Register</a>
+						</li> 
 					@endif
                 </ul>
             </nav>
