@@ -31,10 +31,10 @@
             </div> 
             <nav class="main-menu"> 
                 <ul> 
-                    <li><a href="#">Home</a></li> 
+                    <li><a href="{{ URL::route('homepage') }}">Home</a></li> 
                     <li><a href="#">Orders</a></li>
-                    <li><a href="#">Cart</a></li>  
-                    <li><a href="#" class="login" id="sign-in">Login</a></li> 
+                    <li><a href="{{ URL::route('checkout') }}">Cart</a></li>  
+                    <li><a href="{{ URL::route('login') }}">Login</a></li> 
                 </ul>
             </nav>
         </div>
