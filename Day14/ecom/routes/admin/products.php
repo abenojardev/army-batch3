@@ -26,3 +26,9 @@ Route::post('/products/update/{id}', [
     ProductsController::class,
     'update_save'
 ])->name('admin.products.update.save');
+
+
+Route::get('/products/delete/{id}', [
+    ProductsController::class,
+    'delete'
+])->name('admin.products.delete');

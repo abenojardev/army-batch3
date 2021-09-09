@@ -41,8 +41,8 @@
                                         <td>{{ $x->category }}</td> 
                                         <td>{{ $x->price }}</td> 
                                         <td>
-                                            <a href="" class="btn btn-sm btn-warning">Update</a>
-                                            <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                            <a href="{{ URL::route('admin.products.update', $x->id) }}" class="btn btn-sm btn-warning">Update</a>
+                                            <a href="{{ URL::route('admin.products.delete', $x->id) }}" class="btn btn-sm btn-danger">Delete</a>
                                         </td> 
                                     </tr> 
                                 @endforeach

@@ -14,7 +14,7 @@
                         <div class="header_box version_2">
                             <h2>Create Product</h2>
                         </div> 
-                        <form action="{{ URL::route('admin.products.create') }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ URL::route('admin.products.create.save') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label>Name</label>
