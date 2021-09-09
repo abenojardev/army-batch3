@@ -13,9 +13,9 @@ class ProductsController extends Controller
     {
         $this->request = $request;
     }
-    
+
     public function index()
     {
-
+        return view('admin.products.index');
     }
 }
