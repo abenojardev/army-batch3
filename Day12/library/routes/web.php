@@ -1,10 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookController;
-use App\Http\Controllers\AuthorController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\{
+    BookController,
+    AuthorController,
+    CategoryController,
+    AuthController
+};
 
 // public
 Route::get('/',[
