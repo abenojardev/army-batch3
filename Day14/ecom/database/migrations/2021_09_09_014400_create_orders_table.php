@@ -21,6 +21,13 @@ class CreateOrdersTable extends Migration
             $table->double('sub_total');
             $table->double('delivery_fee');
             $table->double('total');
+
+            $table->longText('full_address');
+
+            $table->longText('payment_id');
+            $table->longText('payment_response');
+            $table->longText('payment_status');
+
             $table->string('status');
             $table->timestamps();
         });
