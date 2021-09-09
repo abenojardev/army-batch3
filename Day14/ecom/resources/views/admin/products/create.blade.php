@@ -13,21 +13,29 @@
                     <div class="box_general padding_bottom">
                         <div class="header_box version_2">
                             <h2>Create Product</h2>
-                        </div>
-                        name
-                    category
-                    price
-                    description
-                    image
+                        </div> 
                         <form action="">
+                            @csrf
                             <div class="form-group">
-                                <label>Old password</label>
-                                <input class="form-control" type="password">
-                            </div>
+                                <label>Name</label>
+                                <input class="form-control" type="text" name="name" required>
+                            </div> 
                             <div class="form-group">
-                                <label>New password</label>
-                                <input class="form-control" type="password">
-                            </div>
+                                <label>Category</label>
+                                <input class="form-control" type="text" name="category" required>
+                            </div> 
+                            <div class="form-group">
+                                <label>Price</label>
+                                <input class="form-control" type="number" name="price" required>
+                            </div> 
+                            <div class="form-group">
+                                <label>Description</label>
+                                <input class="form-control" type="text" name="description" required>
+                            </div> 
+                            <div class="form-group">
+                                <label>Image</label>
+                                <input class="form-control" type="text" name="img" required>
+                            </div> 
                             <div class="form-group">
                                 <button>Save</button>
                             </div>
