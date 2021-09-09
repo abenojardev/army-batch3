@@ -39,7 +39,7 @@
 					</li>
                     <li>
 						<a href="{{ URL::route('checkout') }}">
-							Cart <span class="badge badge-light">2</span>
+							Cart  
 						</a> 
 					</li>  
                     <li>
