@@ -34,7 +34,9 @@
                             <tbody>
                                 @foreach($products as $x)
                                     <tr>
-                                        <td>{{ URL::asset('storage/'.$x->image) }}</td>
+                                        <td>
+                                            <img src="{{ URL::asset('storage/'.$x->image) }}" width="100px">
+                                        </td>
                                         <td>{{ $x->name }}</td> 
                                         <td>{{ $x->category }}</td> 
                                         <td>{{ $x->price }}</td> 
