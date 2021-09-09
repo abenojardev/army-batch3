@@ -41,7 +41,11 @@
 						</li> 
 						<li>
 							<a href="{{ URL::route('checkout') }}">
-								Cart  
+								Cart 
+
+								<span style="color:red;">
+									({{ Cache::get('cart') }})
+								</span>
 							</a> 
 						</li>  
 						<li>
