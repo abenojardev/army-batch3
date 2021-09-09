@@ -13,15 +13,15 @@
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
                                     <label>Fullname</label>
-                                    <input type="text" class="form-control" name="name" id="email"> 
+                                    <input type="text" class="form-control" name="name" id="email" required> 
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" name="email" id="email"> 
+                                    <input type="email" class="form-control" name="email" id="email" required> 
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" class="form-control" name="password" id="password" value=""> 
+                                    <input type="password" class="form-control" name="password" id="password" required> 
                                 </div>
                                 <div class="clearfix add_bottom_15">
                                     <div class="checkboxes float-left">
