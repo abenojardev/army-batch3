@@ -9,7 +9,8 @@
                         <div class="modal_header">
                             <h3>Register Account</h3>
                         </div>
-                        <form>
+                        <form method="post" action="{{ URL::route('register') }}">
+                            @csrf
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
                                     <label>Fullname</label>
