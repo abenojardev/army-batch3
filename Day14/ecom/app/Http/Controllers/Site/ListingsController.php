@@ -52,8 +52,6 @@ class ListingsController extends Controller
 
         Cache::put($cart, $current_cart);
 
-        dd(
-            Cache::get($cart)
-        );
+        return Redirect::route('homepage');
     }
 }
