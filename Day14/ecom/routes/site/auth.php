@@ -8,6 +8,6 @@ Route::get('/login', [
 ])->name('login');
 
 Route::get('/register', [
-    AuthController::class,
+AuthController::class,
     'register'
 ])->name('register');
