@@ -32,7 +32,7 @@ class AuthController extends Controller
         $this->request->merge([
             'password' => bcrypt($this->request->password)
         ]);
-        
+
         $user = User::create(
             $this->request->except('_token')
         );
@@ -47,5 +47,10 @@ class AuthController extends Controller
         Auth::logout();
 
         return Redirect::route('homepage');
+    }
+    
+    public function login_verify()
+    {
+        
     }
 }

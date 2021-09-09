@@ -22,7 +22,7 @@ Route::get('/logout', [
     'logout'
 ])->name('logout');
 
-Route::get('/login/verify', [
+Route::post('/login/verify', [
     AuthController::class,
-    'logout'
-])->name('logout');
+    'login_verify'
+])->name('login.verify');
