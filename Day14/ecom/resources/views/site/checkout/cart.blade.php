@@ -161,8 +161,7 @@
                                     <span>P {{ number_format(($total + 100), 2, '.', ',') }}</span>
                                 </li>
                             </ul>
-                            <a href="confirm-delivery.html" class="btn_1 full-width mb_5">Order Now</a>
-                            <div class="text-center"><small>Or Call Us at <strong>0432 48432854</strong></small></div>
+                            <a href="" class="btn_1 full-width mb_5">Place Order</a> 
                         </div>
                     </div>
                     <!-- /box_booking -->
