@@ -19,22 +19,8 @@
                             </div> 
                             <div class="form-group">
                                 <label>Full Address</label>
-                                <input class="form-control" placeholder="Full Address">
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>City</label>
-                                        <input class="form-control" placeholder="City">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Postal Code</label>
-                                        <input class="form-control" placeholder="0123">
-                                    </div>
-                                </div>
-                            </div>
+                                <input class="form-control" name="address">
+                            </div> 
                         </div>
                     </div>
                     <!-- /box_booking -->
