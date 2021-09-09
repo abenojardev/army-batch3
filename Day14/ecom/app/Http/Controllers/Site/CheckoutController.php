@@ -10,6 +10,10 @@ class CheckoutController extends Controller
 {
     public function index()
     {
+        $cart = Cache::get('cart') ?? [];
+
+        dd($cart);
+        
         return view('site.checkout.cart');
     }
 }
