@@ -148,9 +148,18 @@
                             </ul>
                             
                             <ul class="clearfix">
-                                <li>Subtotal<span>$56</span></li>
-                                <li>Delivery fee<span>$10</span></li>
-                                <li class="total">Total<span>$66</span></li>
+                                <li>
+                                    Subtotal: 
+                                    <span>P {{ number_format($total, 2, '.', ',') }}</span>
+                                </li>
+                                <li>
+                                    Delivery fee: 
+                                    <span>P {{ number_format(100, 2, '.', ',') }}</span>
+                                </li>
+                                <li class="total">
+                                    Total: 
+                                    <span>P {{ number_format(($total + 100), 2, '.', ',') }}</span>
+                                </li>
                             </ul>
                             <a href="confirm-delivery.html" class="btn_1 full-width mb_5">Order Now</a>
                             <div class="text-center"><small>Or Call Us at <strong>0432 48432854</strong></small></div>
