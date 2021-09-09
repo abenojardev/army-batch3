@@ -14,7 +14,7 @@
                         <div class="header_box version_2">
                             <h2>Create Product</h2>
                         </div> 
-                        <form action="">
+                        <form action="{{ URL::route('admin.products.create') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label>Name</label>
@@ -34,7 +34,7 @@
                             </div> 
                             <div class="form-group">
                                 <label>Image</label>
-                                <input class="form-control" type="text" name="img" required>
+                                <input class="form-control" type="file" name="img" required>
                             </div> 
                             <div class="form-group">
                                 <button>Save</button>
