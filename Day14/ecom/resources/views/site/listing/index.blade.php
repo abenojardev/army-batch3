@@ -37,7 +37,7 @@
                                         <ul>
                                             <li><span>P {{ number_format($item->price, 2, '.', ',')}}</span></li>
                                             <li>
-                                                <a href="#" class="score"> 
+                                                <a href="{{ URL::route('add.to.cart', $item->id) }}" class="score"> 
                                                     <strong>
                                                         Add to Cart
                                                     </strong>
