@@ -12,9 +12,16 @@ class CreateOrdersTable extends Migration
      * @return void
      */
     public function up()
-    {
+    { 
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->string('reference_no');
+            $table->longText('order_items');
+            $table->double('sub_total');
+            $table->double('delivery_fee');
+            $table->double('total');
+            $table->string('status');
             $table->timestamps();
         });
     }
