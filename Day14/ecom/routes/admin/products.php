@@ -15,4 +15,14 @@ Route::get('/products/create', [
 Route::post('/products/create', [
     ProductsController::class,
     'create_save'
-])->name('admin.products.create');
+])->name('admin.products.create.save');
+
+Route::get('/products/update/{id}', [
+    ProductsController::class,
+    'update'
+])->name('admin.products.update');
+
+Route::post('/products/update/{id}', [
+    ProductsController::class,
+    'update_save'
+])->name('admin.products.update.save');
