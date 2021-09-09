@@ -13,18 +13,21 @@ class CheckoutController extends Controller
     {
         $cart = Cache::get('cart') ?? [];
         $items = [];
+        $total = 0;
 
         foreach($cart as $product_id => $item){
             $product = Product::find($product_id);
 
             $product->qty = $item['qty'];
-            
+
             $product->total = $item['qty'] * $product->price;
+
+            $total += $product->total;
 
             array_push($items, $product);
         }
 
-        dd($items);
+        dd($items, $total);
         
         return view('site.checkout.cart');
     }
