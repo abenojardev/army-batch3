@@ -129,14 +129,13 @@
                 <div class="col-xl-4 col-lg-4" id="sidebar_fixed">
                     <div class="box_booking"   style="background: white; padding:4%;">
                         <div class="head">
-                            <h3>Order Summary</h3>
-                            <div>Pizzeria da Alfredo</div>
+                            <h3>Order Summary</h3> 
                         </div>
                         <!-- /head -->
                         <div class="main">
                             <ul>
-                                <li>Date<span>Today 23/11/2019</span></li>
-                                <li>Hour<span>08.30pm</span></li>
+                                <li>Date: <span>{{ \Carbon\Carbon::now()->format('M d, Y') }}</span></li>
+                                <li>Hour: <span>{{ \Carbon\Carbon::now()->format('h:i A') }}</span></li>
                                 <li>Type<span>Delivery</span></li>
                             </ul>
                             <hr>
