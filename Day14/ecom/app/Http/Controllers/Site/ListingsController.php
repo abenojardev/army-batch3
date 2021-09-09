@@ -26,6 +26,9 @@ class ListingsController extends Controller
 
     public function add_to_cart($id)
     {
-        
+        // check if session exists
+        // create session / get session
+        // product available 
+        // add to session
     }
 }
