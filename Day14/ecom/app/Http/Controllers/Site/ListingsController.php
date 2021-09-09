@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class ListingsController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('site.listing.index');
+    }
 }
