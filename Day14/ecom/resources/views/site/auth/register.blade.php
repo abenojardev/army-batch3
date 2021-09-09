@@ -33,7 +33,7 @@
                                     </div> 
                                 </div>
                                 <div class="text-center">
-                                    <input type="submit" value="Log In" class="btn_1 full-width mb_5"> 
+                                    <input type="submit" value="Register" class="btn_1 full-width mb_5"> 
                                 </div> 
                             </div>
                         </form> 
