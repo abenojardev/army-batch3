@@ -7,7 +7,7 @@
                     <div class="col-4"></div>
                     <div class="col-xl-4 col-lg-4 col-md-4" style="background: white; padding-bottom: 2%;"> 
                         <div class="modal_header">
-                            <h3>register In</h3>
+                            <h3>Register Account</h3>
                         </div>
                         <form>
                             <div class="sign-in-wrapper"> 
