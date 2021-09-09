@@ -140,11 +140,13 @@
                             </ul>
                             <hr>
                             <ul class="clearfix">
-                                <li><a href="#0">1x Enchiladas</a><span>$11</span></li>
-                                <li><a href="#0">2x Burrito</a><span>$14</span></li>
-                                <li><a href="#0">1x Chicken</a><span>$18</span></li>
-                                <li><a href="#0">2x Corona Beer</a><span>$9</span></li>
-                                <li><a href="#0">2x Cheese Cake</a><span>$11</span></li>
+                                @foreach($items as $item)
+                                    <li>
+                                        {{ $item->qty }}x {{ $item->name }} -
+
+                                        P {{ number_format($item->total, 2, '.', ',') }}
+                                    </li> 
+                                @endforeach
                             </ul>
                             
                             <ul class="clearfix">
