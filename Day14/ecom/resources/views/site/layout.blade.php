@@ -38,6 +38,11 @@
 						<a href="#">Orders</a>
 					</li>
                     <li>
+						<a href="{{ URL::route('logout') }}">
+							Cart  
+						</a> 
+					</li>  
+                    <li>
 						<a href="{{ URL::route('checkout') }}">
 							Cart  
 						</a> 
