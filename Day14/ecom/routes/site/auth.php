@@ -21,3 +21,8 @@ Route::get('/logout', [
     AuthController::class,
     'logout'
 ])->name('logout');
+
+Route::get('/login/verify', [
+    AuthController::class,
+    'logout'
+])->name('logout');
