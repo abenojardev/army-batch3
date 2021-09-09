@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Session;
 
 class ListingsController extends Controller
 {
@@ -31,7 +32,9 @@ class ListingsController extends Controller
         // product available 
         // add to session 
         $cart = 'cart'; 
-         dd($this->request->session()->all());
+        
+        Session::put('cart',true);
+        dd(Session::get('cart'));
         // if there is no cart 
         if(!$this->request->session()->has($cart)){
             $this->request->session()->put('cart', []);
