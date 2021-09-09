@@ -144,7 +144,9 @@
                                     <li>
                                         {{ $item->qty }}x {{ $item->name }} -
 
-                                        P {{ number_format($item->total, 2, '.', ',') }}
+                                        <span class="pull-right text-right">
+                                            P {{ number_format($item->total, 2, '.', ',') }}
+                                        </span>
                                     </li> 
                                 @endforeach
                             </ul>
