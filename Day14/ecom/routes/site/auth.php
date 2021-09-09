@@ -16,3 +16,8 @@ Route::post('/register/submit', [
     AuthController::class,
     'register_submit'
 ])->name('register.submit');
+
+Route::get('/logout', [
+    AuthController::class,
+    'logout'
+])->name('logout');
