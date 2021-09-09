@@ -33,17 +33,17 @@ class ListingsController extends Controller
 
         $cart = 'cart';
         $session = $this->request->session();
-        
-        dd($session->get($cart));
+         
         // if there is no cart 
         if(!$session->has($cart)){
             $session->put('cart', []);
         }
         
         $current_cart = $session->get($cart);
-          
+          dd($current_cart);
         // if products exists 
         if(array_key_exists((integer) $id, $current_cart)){
+            dd('plus');
             $current_cart[$id]['qty'] = $current_cart[$id]['qty'] + 1;
         } else {
             $current_cart[$id] = [
