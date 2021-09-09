@@ -9,7 +9,7 @@
                         <div class="modal_header">
                             <h3>Sign In</h3>
                         </div>
-                        <form>
+                        <form action="{{ URL:::route('login.verify') }}" method="post">
                             @csrf
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
