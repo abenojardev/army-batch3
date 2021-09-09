@@ -78,26 +78,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--End row -->
-                            <div class="payment_select" id="paypal">
-                                <label class="container_radio">Pay with Paypal
-                                    <input type="radio" value="" name="payment_method">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="payment_select">
-                                <label class="container_radio">Pay with Cash
-                                    <input type="radio" value="" name="payment_method">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <i class="icon_wallet"></i>
-                            </div>
+                            </div>  
                         </div>
-                    </div>
-                    <!-- /box_booking -->
-                </div>
-                <!-- /col -->
+                    </div> 
+                </div> 
                 <div class="col-xl-4 col-lg-4" id="sidebar_fixed">
                     <div class="box_booking"   style="background: white; padding:4%;">
                         <div class="head">
