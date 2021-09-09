@@ -31,7 +31,7 @@ class ProductsController extends Controller
     public function update($id)
     {
         return view('admin.products.update')->with([
-            'products' => Product::find($id)
+            'data' => Product::find($id)
         ]);
     }
 
