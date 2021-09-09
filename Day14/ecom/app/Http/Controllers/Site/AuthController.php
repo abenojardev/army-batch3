@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Redirect;
 
 class AuthController extends Controller
 {
@@ -19,6 +21,6 @@ class AuthController extends Controller
 
     public function register_submit()
     {
-        
+
     }
 }
