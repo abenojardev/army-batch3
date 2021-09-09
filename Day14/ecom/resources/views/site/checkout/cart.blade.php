@@ -142,11 +142,12 @@
                             <ul class="clearfix">
                                 @foreach($items as $item)
                                     <li>
-                                        {{ $item->qty }}x {{ $item->name }} -
-
-                                        <span class="pull-right text-right">
+                                        <b class="pull-right text-right">
                                             P {{ number_format($item->total, 2, '.', ',') }}
-                                        </span>
+                                        </b><br>
+
+                                        {{ $item->qty }}x {{ $item->name }}
+
                                     </li> 
                                 @endforeach
                             </ul>
