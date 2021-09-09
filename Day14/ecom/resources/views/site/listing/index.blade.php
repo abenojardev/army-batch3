@@ -23,24 +23,26 @@
                             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
                                 <div class="strip">
                                     <figure> 
-                                        <img src="{{ URL::asset('theme/img/lazy-placeholder.png') }}" data-src="{{ URL::asset('theme/img/location_1.jpg') }}" class="img-fluid lazy" alt="">
+                                        <img src="{{ URL::asset('theme/img/lazy-placeholder.png') }}" data-src="{{ URL::asset('storage/'.$item->image) }}" class="img-fluid lazy" alt="">
                                         <a href="detail-restaurant.html" class="strip_info">
-                                            <small>{{ $item->name }}</small>
+                                            <small>{{ $item->category }}</small>
                                             <div class="item_title">
-                                                <h3>{{ $item->category }}</h3>
+                                                <h3>{{ $item->name }}</h3>
                                                 <small>{{ Str::limit($item->description, 30)}}</small>
                                             </div>
                                         </a>
                                     </figure>
                                     <ul>
                                         <li><span>P {{ number_format($item->price, 2, '.', ',')}}</span></li>
-                                        <li>
-                                            <a href="#" class="score"> 
-                                                <strong>
-                                                    Add to Cart
-                                                </strong>
-                                            </a>
-                                        </li>
+                                        @auth
+                                            <li>
+                                                <a href="#" class="score"> 
+                                                    <strong>
+                                                        Add to Cart
+                                                    </strong>
+                                                </a>
+                                            </li>
+                                        @endauth
                                     </ul>
                                 </div>
                             </div> 
