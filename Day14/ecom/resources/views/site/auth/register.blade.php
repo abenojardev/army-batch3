@@ -12,6 +12,10 @@
                         <form>
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
+                                    <label>Fullname</label>
+                                    <input type="text" class="form-control" name="name" id="email"> 
+                                </div>
+                                <div class="form-group">
                                     <label>Email</label>
                                     <input type="email" class="form-control" name="email" id="email"> 
                                 </div>
@@ -26,11 +30,7 @@
                                           <span class="checkmark"></span>
                                         </label>
                                     </div> 
-                                </div>
-                                <div class="text-center">
-                                    <input type="submit" value="Log In" class="btn_1 full-width mb_5">
-                                    Don’t have an account? <a href="account.html">Sign up</a>
-                                </div>
+                                </div> 
                                 <div id="forgot_pw">
                                     <div class="form-group">
                                         <label>Please confirm login email below</label>
