@@ -13,13 +13,11 @@
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" name="email" id="email">
-                                    <i class="icon_mail_alt"></i>
+                                    <input type="email" class="form-control" name="email" id="email"> 
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="password" class="form-control" name="password" id="password" value="">
-                                    <i class="icon_lock_alt"></i>
+                                    <input type="password" class="form-control" name="password" id="password" value=""> 
                                 </div>
                                 <div class="clearfix add_bottom_15">
                                     <div class="checkboxes float-left">
