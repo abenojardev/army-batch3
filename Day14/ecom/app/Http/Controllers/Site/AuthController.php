@@ -16,4 +16,9 @@ class AuthController extends Controller
     {
         return view('site.auth.register');
     }
+
+    public function register_submit()
+    {
+        
+    }
 }
