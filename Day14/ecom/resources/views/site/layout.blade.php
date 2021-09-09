@@ -25,7 +25,7 @@
 	<header class="header_in clearfix">
 		<div class="container">
             <div id="logo">
-                <a href="index.html">
+                <a href="{{ URL::route('homepage') }}">
                     <img src="{{ URL::asset('theme/img/logo_sticky.svg') }}" width="140" height="35" alt="">
                 </a>
             </div> 
