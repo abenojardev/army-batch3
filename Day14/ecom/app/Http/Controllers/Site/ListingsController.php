@@ -34,8 +34,16 @@ class ListingsController extends Controller
         $cart = 'cart';
         $session = $this->request->session();
 
+        // if there is no cart 
         if(!$session->has($cart)){
             $session->put('cart', []);
+        }
+
+        $current_cart = $session->get($cart);
+        
+        // if products exists
+        if(array_key_exists($id, $current_cart)){
+
         }
 
         dd(
