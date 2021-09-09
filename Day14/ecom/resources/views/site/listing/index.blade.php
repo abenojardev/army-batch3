@@ -32,9 +32,10 @@
                                             </div>
                                         </a>
                                     </figure>
-                                    <ul>
-                                        <li><span>P {{ number_format($item->price, 2, '.', ',')}}</span></li>
-                                        @auth
+
+                                    @auth
+                                        <ul>
+                                            <li><span>P {{ number_format($item->price, 2, '.', ',')}}</span></li>
                                             <li>
                                                 <a href="#" class="score"> 
                                                     <strong>
@@ -42,8 +43,8 @@
                                                     </strong>
                                                 </a>
                                             </li>
-                                        @endauth
                                     </ul>
+                                    @endauth
                                 </div>
                             </div> 
                         @endforeach 
