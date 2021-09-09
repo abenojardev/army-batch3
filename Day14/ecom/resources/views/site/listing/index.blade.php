@@ -27,13 +27,13 @@
                                         <a href="detail-restaurant.html" class="strip_info">
                                             <small>{{ $item->name }}</small>
                                             <div class="item_title">
-                                                <h3>Da Alfredo</h3>
-                                                <small>27 Old Gloucester St</small>
+                                                <h3>{{ $item->category }}</h3>
+                                                <small>{{ Str::limit($item->description, 30)}}</small>
                                             </div>
                                         </a>
                                     </figure>
                                     <ul>
-                                        <li><span>P 242.42</span></li>
+                                        <li><span>P {{ number_format($item->price, 2, '.', ',')}}</span></li>
                                         <li>
                                             <a href="#" class="score"> 
                                                 <strong>
