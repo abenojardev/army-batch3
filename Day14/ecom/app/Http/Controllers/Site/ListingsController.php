@@ -30,5 +30,10 @@ class ListingsController extends Controller
         // create session / get session
         // product available 
         // add to session
+
+        $cart = 'cart';
+        $session = $this->request->session();
+
+        if($session->has(''))
     }
 }
