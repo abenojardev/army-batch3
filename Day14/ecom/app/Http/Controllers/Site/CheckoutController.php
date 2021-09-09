@@ -11,8 +11,13 @@ class CheckoutController extends Controller
     public function index()
     {
         $cart = Cache::get('cart') ?? [];
+        $items = [];
 
-        dd($cart);
+        foreach($cart as $product_id => $item){
+
+        }
+        
+        dd($items);
         
         return view('site.checkout.cart');
     }
