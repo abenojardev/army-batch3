@@ -7,7 +7,7 @@ Route::get('/', [
     'index'
 ])->name('homepage');
 
-Route::post('/add-to-cart', [
+Route::get('/add-to-cart/{id}', [
     ListingsController::class,
     'add_to_cart'
 ])->name('add.to.cart');
