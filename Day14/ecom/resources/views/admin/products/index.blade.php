@@ -32,14 +32,18 @@
                                 </tr>
                             </thead> 
                             <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr> 
+                                @foreach($products as $x)
+                                    <tr>
+                                        <td>{{ URL::asset('storage/'.$x->image) }}</td>
+                                        <td>{{ $x->name }}</td> 
+                                        <td>{{ $x->category }}</td> 
+                                        <td>{{ $x->price }}</td> 
+                                        <td>
+                                            <a href="" class="btn btn-sm btn-warning">Update</a>
+                                            <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                        </td> 
+                                    </tr> 
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
