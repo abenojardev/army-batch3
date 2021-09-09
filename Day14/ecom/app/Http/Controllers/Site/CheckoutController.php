@@ -26,9 +26,10 @@ class CheckoutController extends Controller
 
             array_push($items, $product);
         }
-
-        dd($items, $total);
-        
-        return view('site.checkout.cart');
+ 
+        return view('site.checkout.cart')->with([
+            'items' => $items,
+            'total' => $total
+        ]);
     }
 }
