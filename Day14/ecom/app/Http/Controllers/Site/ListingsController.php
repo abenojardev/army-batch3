@@ -40,12 +40,18 @@ class ListingsController extends Controller
         }
 
         $current_cart = $session->get($cart);
-        
+
         // if products exists
         if(array_key_exists($id, $current_cart)){
-
+            $current_cart[$id]['qty']++;
+        } else {
+            $current_cart[$id] = [
+                'qty' => 1
+            ];
         }
 
+        $session->put($cart, $current_cart);
+        
         dd(
             $session->get($cart)
         );
