@@ -23,4 +23,9 @@ class ListingsController extends Controller
             'products' => $product
         ]);
     }
+
+    public function add_to_cart($id)
+    {
+        
+    }
 }
