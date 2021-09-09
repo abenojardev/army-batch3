@@ -15,22 +15,8 @@
                         <div class="main">
                             <div class="form-group">
                                 <label>First and Last Name</label>
-                                <input class="form-control" placeholder="First and Last Name">
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Email Address</label>
-                                        <input class="form-control" placeholder="Email Address">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Phone</label>
-                                        <input class="form-control" placeholder="Phone">
-                                    </div>
-                                </div>
-                            </div>
+                                <input class="form-control" value="{{ Auth::user()->name }}" readonly>
+                            </div> 
                             <div class="form-group">
                                 <label>Full Address</label>
                                 <input class="form-control" placeholder="Full Address">
