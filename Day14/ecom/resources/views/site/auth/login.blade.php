@@ -9,8 +9,13 @@
                         <div class="modal_header">
                             <h3>Sign In</h3>
                         </div>
-                        <form action="{{ URL:::route('login.verify') }}" method="post">
+                        <form action="{{ URL::route('login.verify') }}" method="post">
                             @csrf
+
+                            <p style="color: red;">
+                                Wrong Login Credentails!
+                            </p>
+
                             <div class="sign-in-wrapper"> 
                                 <div class="form-group">
                                     <label>Email</label>
