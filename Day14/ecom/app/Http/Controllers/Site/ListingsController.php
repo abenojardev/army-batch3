@@ -42,8 +42,7 @@ class ListingsController extends Controller
         $current_cart = Cache::get($cart); 
 
         // if products exists 
-        if(array_key_exists((integer) $id, $current_cart)){
-            dd('plus');
+        if(array_key_exists((integer) $id, $current_cart)){ 
             $current_cart[$id]['qty'] = $current_cart[$id]['qty'] + 1;
         } else {
             $current_cart[$id] = [
