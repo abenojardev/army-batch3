@@ -34,6 +34,12 @@ class ListingsController extends Controller
         $cart = 'cart';
         $session = $this->request->session();
 
-        if($session->has(''))
+        if(!$session->has($cart)){
+            $session->put('cart', []);
+        }
+
+        dd(
+            $session->get($cart)
+        );
     }
 }
