@@ -73,7 +73,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-8 col-6">
-                                                <img src="img/icon_ccv.gif" width="50" height="29" alt="ccv"><small>Last 3 digits</small>
+                                                <img src="{{ URL::asset('theme/img/icon_ccv.gif') }}" width="50" height="29" alt="ccv"><small>Last 3 digits</small>
                                             </div>
                                         </div>
                                     </div>
