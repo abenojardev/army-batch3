@@ -18,6 +18,8 @@ class CheckoutController extends Controller
             $product = Product::find($product_id);
 
             $product->qty = $item['qty'];
+            
+            $product->total = $item['qty'] * $product->price;
 
             array_push($items, $product);
         }
