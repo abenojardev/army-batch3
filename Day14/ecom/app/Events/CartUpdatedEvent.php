@@ -14,14 +14,11 @@ class CartUpdatedEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    /**
-     * Create a new event instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    protected $user_id;
+
+    public function __construct($user_id)
     {
-        //
+        $this->user_id = $user_id;
     } 
 
     public function broadcastOn()
@@ -31,6 +28,6 @@ class CartUpdatedEvent
 
     public function broadcastAs()
     {
-        return 'updated-'.$this->id;
+        return 'updated-'.$this->user_id;
     }
 }
