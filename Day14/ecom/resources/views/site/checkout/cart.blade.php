@@ -5,7 +5,7 @@
         <div class="container margin_60_40">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8" style="background: white; padding:2%;">
-                    <form action="">
+                    <form action="" method="post">
                         <input type="hidden" name="total" value="{{ $total + 100 }}">
                         @csrf
                         <div class="box_booking_2 style_2">
