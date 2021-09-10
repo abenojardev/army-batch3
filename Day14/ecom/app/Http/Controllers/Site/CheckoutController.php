@@ -22,7 +22,12 @@ class CheckoutController extends Controller
             'payment_method_types' => ['card'],
             'line_items' => [
               [
-                'price' => 1000.00,
+                'price_data' => [
+                    'currency' => 'php',
+                    'product' => 'test',
+                    'unit_amount_decimal' => 1000.00
+    
+                ],
                 'quantity' => 2,
               ],
             ],
