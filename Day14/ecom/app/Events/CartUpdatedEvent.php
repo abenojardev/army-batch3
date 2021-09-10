@@ -11,7 +11,7 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 use Log;
 
-class CartUpdatedEvent
+class CartUpdatedEvent extends ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
