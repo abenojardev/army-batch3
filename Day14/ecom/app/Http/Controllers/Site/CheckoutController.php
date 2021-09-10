@@ -50,8 +50,9 @@ class CheckoutController extends Controller
             'status' => 'Processing'
         ]);
 
-        if($charge->status == 'status'){
-
+        if($charge->status == 'succeeded'){
+            Cache::flush()
+            return back()->withSuccess(true);
         }
         
         abort(500);
