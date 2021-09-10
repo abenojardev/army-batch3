@@ -16,22 +16,11 @@ class CheckoutController extends Controller
             env('STRIPE_SECRET_KEY')
           );
 
-          $stripe->checkout->sessions->create([
-            'success_url' => 'https://example.com/success',
-            'cancel_url' => 'https://example.com/cancel',
-            'payment_method_types' => ['card'],
-            'line_items' => [
-              [
-                'price_data' => [
-                    'currency' => 'php',
-                    'product' => 'test',
-                    'unit_amount_decimal' => 1000.00
-    
-                ],
-                'quantity' => 2,
-              ],
-            ],
-            'mode' => 'payment',
+          $stripe->charges->create([
+            'amount' => 2000,
+            'currency' => 'usd',
+            'source' => 'tok_visa',
+            'description' => 'My First Test Charge (created for API docs)',
           ]);
 
         $cart = Cache::get('cart') ?? [];
