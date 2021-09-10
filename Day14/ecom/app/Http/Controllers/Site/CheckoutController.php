@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Cache;
+use Cache, Auth;
 use App\Models\Product;
 use \Stripe\StripeClient;
 
@@ -27,7 +27,7 @@ class CheckoutController extends Controller
             'amount' => $this->request->total,
             'currency' => 'php',
             'source' => 'tok_visa',
-            'description' => 'My First Test Charge (created for API docs)',
+            'description' => 'Order from :'.Auth::user()->name,
         ]);
         
         dd($charge);
