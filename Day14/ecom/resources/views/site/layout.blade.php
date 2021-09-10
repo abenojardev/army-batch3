@@ -223,5 +223,7 @@
     <script src="{{ URL::asset('theme/assets/validate.js') }}"></script> 
     <script src="{{ URL::asset('theme/js/sticky_sidebar.min.js') }}"></script>
     <script src="{{ URL::asset('theme/js/specific_listing.js') }}"></script> 
+
+	@yield('scripts')
 </body>
 </html>
