@@ -4,7 +4,6 @@
             
         <div class="container margin_60_40">
             <div class="row justify-content-center">
- 
                 @if(session('success'))
                     <div class="col-xl-10 col-lg-10" id="sidebar_fixed">
                         <div class="box_booking"   style="background: white; padding:4%;">
@@ -17,8 +16,6 @@
                         </div>
                     </div>
                 @endif
-                
-
                 @if(!session('success'))
                     <div class="col-xl-6 col-lg-8" style="background: white; padding:2%;">
                         <form action="{{ URL::route('checkout.verify') }}" method="post">
@@ -148,8 +145,7 @@
                         </div>
                         <!-- /box_booking -->
                     </div>
-                @end
-
+                @endif
             </div> 
         </div> 
         
