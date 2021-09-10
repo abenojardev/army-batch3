@@ -66,7 +66,7 @@
         var channel = pusher.subscribe('cart');
 
         channel.bind('updated-{{ Auth::id() }}', function(data) {
-            document.getElementById('cart').innerHTML = data.cart;
+            document.getElementById('cart').innerHTML = '('+data.cart+')';
         });
     </script>
 @endsection
