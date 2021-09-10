@@ -37,8 +37,8 @@ class CheckoutController extends Controller
         ]);
         
         Order::create([
-            'user_id',
-            'reference_no',
+            'user_id' => Auth::id(),
+            'reference_no' => bcrypt(rand(11111, 99999)),
             'order_items',
             'sub_total',
             'delivery_fee',
