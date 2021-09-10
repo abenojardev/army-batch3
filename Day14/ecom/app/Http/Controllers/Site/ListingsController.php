@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use Cache, Redirect;
+use App\Events\CartUpdatedEvent;
 
 class ListingsController extends Controller
 {
@@ -51,6 +52,12 @@ class ListingsController extends Controller
         } 
 
         Cache::put($cart, $current_cart);
+
+
+        event(new CartUpdatedEvent(
+            Auth::id(),
+            count(Cache::get('cart'))
+        ));
 
         return Redirect::route('homepage');
     }
