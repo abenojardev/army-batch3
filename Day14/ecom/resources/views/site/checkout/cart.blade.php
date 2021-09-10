@@ -45,7 +45,7 @@
                                     <div id="card-element"></div>
                                 </label> 
                                 <label for="card-element">Card</label>
-                                <div id="card-element"></div>
+                                <div id="card-element" style="float: left; width: 400px; !important"></div>
                             </div> 
                         </div> 
                     </div> 
