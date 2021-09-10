@@ -26,11 +26,11 @@ class CartUpdatedEvent
 
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new PrivateChannel('cart');
     } 
-    
+
     public function broadcastAs()
     {
-        return 'message-received-'.$this->id;
+        return 'updated-'.$this->id;
     }
 }
