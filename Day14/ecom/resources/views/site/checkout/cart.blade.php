@@ -78,6 +78,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-12"> 
+                                    <button href="" class="btn_1 full-width mb_5">Place Order</button> 
+                                </div>
                             </div>  
                         </div>
                     </div> 
@@ -122,7 +125,6 @@
                                     <span>P {{ number_format(($total + 100), 2, '.', ',') }}</span>
                                 </li>
                             </ul>
-                            <a href="" class="btn_1 full-width mb_5">Place Order</a> 
                         </div>
                     </div>
                     <!-- /box_booking -->
