@@ -39,10 +39,47 @@
                                 </label>
                                 <i class="icon_creditcard"></i>
                             </div>
-                            <div class="form-group">  
-                                <div id="card-element"></div>
-                            </div> 
-                        </div> 
+                            <div class="form-group">
+                                <label>Name on card</label>
+                                <input type="text" class="form-control" id="name_card_order" name="name_card_order" placeholder="First and last name">
+                            </div>
+                            <div class="form-group">
+                                <label>Card number</label>
+                                <input type="text" id="card_number" name="card_number" class="form-control" placeholder="Card number">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Expiration date</label>
+                                    <div class="row">
+                                        <div class="col-md-6 col-6">
+                                            <div class="form-group">
+                                                <input type="text" id="expire_month" name="expire_month" class="form-control" placeholder="mm">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <div class="form-group">
+                                                <input type="text" id="expire_year" name="expire_year" class="form-control" placeholder="yyyy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>Security code</label>
+                                        <div class="row">
+                                            <div class="col-md-4 col-6">
+                                                <div class="form-group">
+                                                    <input type="text" id="ccv" name="ccv" class="form-control" placeholder="CCV">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                <img src="{{ URL::asset('theme/img/icon_ccv.gif') }}" width="50" height="29" alt="ccv"><small>Last 3 digits</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
                     </div> 
                 </div> 
                 <div class="col-xl-4 col-lg-4" id="sidebar_fixed">
@@ -97,19 +134,4 @@
         <!-- /container -->
         
     </main>
-@endsection
-@section('scripts')
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-    var stripe = Stripe('{{ env('STRIPE_PUB_KEY') }}');
-    var elements = stripe.elements();
-    var cardElement = elements.create('card');
-  cardElement.mount('#card-element');
-</script>
-<style>
-    #card-element{
-        float: left; 
-        width: 400px;
-    }
-</style>
-@endsection
+@endsection 
