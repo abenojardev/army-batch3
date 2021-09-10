@@ -31,7 +31,7 @@ class CartUpdatedEvent
 
     public function broadcastOn()
     {
-        return new PrivateChannel('cart');
+        return ['cart'];
     } 
 
     public function broadcastAs()
