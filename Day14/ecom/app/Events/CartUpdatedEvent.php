@@ -24,7 +24,9 @@ class CartUpdatedEvent
 
     public function broadcastWith()
     {
-        return ['id' => $this->user->id];
+        return [
+            'cart' => $this->cart 
+        ];
     }
 
     public function broadcastOn()
