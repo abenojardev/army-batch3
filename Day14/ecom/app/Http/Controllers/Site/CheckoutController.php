@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Cache, Auth;
+use Cache, Auth, Env;
 use App\Models\Product;
 use \Stripe\StripeClient;
 
@@ -14,6 +14,10 @@ class CheckoutController extends Controller
 
     public function __construct(Request $request)
     {
+
+        dd(
+            Env::get('STRIPE_SECRET_KEY')
+        );
         $this->request = $request;
 
         $this->stripe = new StripeClient(
