@@ -44,9 +44,9 @@
 								Cart 
 
 								
-								<span style="color:red;">
+								<span style="color:red;" id="cart">
 									@if(Cache::has('cart'))
-										({{ count(Cache::get('cart')) }})
+										({{ count(Cache::get('cart')) }}) 
 									@endif
 								</span>
 							</a> 
