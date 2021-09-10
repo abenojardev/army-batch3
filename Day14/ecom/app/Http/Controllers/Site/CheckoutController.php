@@ -33,7 +33,11 @@ class CheckoutController extends Controller
             'description' => 'Order from :'.Auth::user()->name,
         ]);
         
-        dd($charge);
+        if($charge->status == 'status'){
+            
+        }
+        
+        abort(500);
     }
 
     public function index()
