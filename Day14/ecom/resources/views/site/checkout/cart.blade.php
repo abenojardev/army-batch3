@@ -5,18 +5,19 @@
         <div class="container margin_60_40">
             <div class="row justify-content-center">
 
-                <div class="col-xl-4 col-lg-4" id="sidebar_fixed">
+                <div class="col-xl-10 col-lg-10" id="sidebar_fixed">
                     <div class="box_booking"   style="background: white; padding:4%;">
                         <div class="head">
-                            <h3>Order Summary</h3> 
+                            <h3>Order Success</h3> 
                         </div>
                         <!-- /head -->
                         <div class="main">
+                            Your payment was successful, order is now procesing!
                         </div>
                     </div>
                 </div>
 
-                
+
                 <div class="col-xl-6 col-lg-8" style="background: white; padding:2%;">
                     <form action="{{ URL::route('checkout.verify') }}" method="post">
                         <input type="hidden" name="total" value="{{ $total + 100 }}">
