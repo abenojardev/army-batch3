@@ -63,8 +63,9 @@
             cluster: 'ap1'
         });
     
-        var channel = pusher.subscribe('my-channel');
-        channel.bind('my-event', function(data) {
+        var channel = pusher.subscribe('cart');
+
+        channel.bind('updated-{{ Auth::id() }}', function(data) {
             alert(JSON.stringify(data));
         });
     </script>
