@@ -80,6 +80,17 @@
                                 </div>
                             </div>  
                         </div>
+                        <!-- Mount the instance within a <label> -->
+<label>Card
+    <div id="card-element"></div>
+  </label>
+  
+  <!--
+    Or create a <label> with a 'for' attribute,
+    referencing the ID of your container.
+  -->
+  <label for="card-element">Card</label>
+  <div id="card-element"></div>
                     </div> 
                 </div> 
                 <div class="col-xl-4 col-lg-4" id="sidebar_fixed">
@@ -137,4 +148,10 @@
 @endsection
 @section('scripts')
 <script src="https://js.stripe.com/v3/"></script>
+<script>
+    var stripe = Stripe('{{ env('STRIPE_PUB_KEY') }}');
+    var elements = stripe.elements();
+    var cardElement = elements.create('card');
+  cardElement.mount('#card-element');
+</script>
 @endsection
