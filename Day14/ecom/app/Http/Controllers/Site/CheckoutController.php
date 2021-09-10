@@ -13,12 +13,10 @@ class CheckoutController extends Controller
 {
     protected $request, $stripe;
 
+    private $secret_key = 'sk_test_51JXiFhBQ3ej9DvVg7tfddEGwEOptEW3wnrJEAcRWCBqB6GmEQEEmPoWjdg9PBMEiM5YIfFWhbmjCMepL3LO0sNSm00gEr06hnF';
+    
     public function __construct(Request $request)
-    {
-
-        dd(
-            Env::get('STRIPE_SECRET_KEY')
-        );
+    { 
         $this->request = $request;
 
         $this->stripe = new StripeClient(
