@@ -56,18 +56,16 @@
 @endsection
 @section('scripts')
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
-    <script>
-
-        // Enable pusher logging - don't include this in production
+    <script> 
         Pusher.logToConsole = true;
     
         var pusher = new Pusher('db5d1619725f9fe08e31', {
-          cluster: 'ap1'
+            cluster: 'ap1'
         });
     
         var channel = pusher.subscribe('my-channel');
         channel.bind('my-event', function(data) {
-          alert(JSON.stringify(data));
+            alert(JSON.stringify(data));
         });
     </script>
 @endsection
