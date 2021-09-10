@@ -51,7 +51,8 @@ class CheckoutController extends Controller
         ]);
 
         if($charge->status == 'succeeded'){
-            Cache::flush()
+            // remove items on cart
+            Cache::flush(); // Session::flush();
             return back()->withSuccess(true);
         }
         
