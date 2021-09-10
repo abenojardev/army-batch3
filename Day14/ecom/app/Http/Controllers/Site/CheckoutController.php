@@ -6,7 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Env;
 use Cache, Auth;
-use App\Models\Product;
+use App\Models\{
+    Product,
+    Order
+};
 use \Stripe\StripeClient;
 
 class CheckoutController extends Controller
@@ -33,8 +36,22 @@ class CheckoutController extends Controller
             'description' => 'Order from :'.Auth::user()->name,
         ]);
         
+        Order::create([
+            'user_id',
+            'reference_no',
+            'order_items',
+            'sub_total',
+            'delivery_fee',
+            'total',
+            'full_address',
+            'payment_id',
+            'payment_response',
+            'payment_status',
+            'status'
+        ]);
+
         if($charge->status == 'status'){
-            
+
         }
         
         abort(500);
