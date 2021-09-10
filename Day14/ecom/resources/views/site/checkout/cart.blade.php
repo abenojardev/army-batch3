@@ -6,6 +6,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8" style="background: white; padding:2%;">
                     <form action="">
+                        <input type="hidden" name="total" value="{{ $total + 100 }}">
+                        @csrf
                         <div class="box_booking_2 style_2">
                             <div class="head">
                                 <div class="title">
