@@ -44,10 +44,10 @@ class CheckoutController extends Controller
             'delivery_fee' => 100,
             'total' => $this->request->total,
             'full_address' => $this->request->address,
-            'payment_id',
-            'payment_response',
-            'payment_status',
-            'status'
+            'payment_id' => $charge->id,
+            'payment_response' => $charge,
+            'payment_status' => $charge->status,
+            'status' => 'Processing'
         ]);
 
         if($charge->status == 'status'){
