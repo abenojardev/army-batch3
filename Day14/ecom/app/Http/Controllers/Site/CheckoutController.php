@@ -10,26 +10,20 @@ use \Stripe\StripeClient;
 
 class CheckoutController extends Controller
 {
-    public function index()
+    protected $request;
+
+    public function __construct(Request $request)
     {
-        $stripe = new StripeClient(
-            env('STRIPE_SECRET_KEY')
-          );
+        $this->request = $request;
+    }
 
+    public function verify()
+    {
+        dd($this->request->all());
+    }
 
-        //   $stripe->customers->createSource(
-        //     'cus_KCNL2OpD4MmzJH',
-        //     ['source' => 'tok_mastercard']
-        //   );
-        //   $charge = $stripe->charges->create([
-        //     'amount' => 20000,
-        //     'currency' => 'usd',
-        //     'source' => 'tok_visa',
-        //     'description' => 'My First Test Charge (created for API docs)',
-        //   ]);
-
-        //   dd($charge);
-
+    public function index()
+    { 
         $cart = Cache::get('cart') ?? [];
         $items = [];
         $total = 0;
