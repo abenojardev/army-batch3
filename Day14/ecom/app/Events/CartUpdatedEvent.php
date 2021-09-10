@@ -9,6 +9,7 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Log;
 
 class CartUpdatedEvent
 {
@@ -20,6 +21,7 @@ class CartUpdatedEvent
     {
         $this->user_id = $user_id;
         $this->cart = $cart;
+        Log::debug('test');
     } 
 
     public function broadcastWith()
