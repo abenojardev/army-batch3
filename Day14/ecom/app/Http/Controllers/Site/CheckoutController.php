@@ -25,9 +25,9 @@ class CheckoutController extends Controller
     }
 
     public function verify()
-    {
+    { 
         $charge = $this->stripe->charges->create([
-            'amount' => $this->request->total,
+            'amount' => number_format($this->request->total, 2, '',''),
             'currency' => 'php',
             'source' => 'tok_visa',
             'description' => 'Order from :'.Auth::user()->name,
