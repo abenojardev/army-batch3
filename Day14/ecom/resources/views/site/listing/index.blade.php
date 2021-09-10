@@ -54,3 +54,6 @@
         </div> 
     </main>
 @endsection
+@section('scripts')
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+@endsection
