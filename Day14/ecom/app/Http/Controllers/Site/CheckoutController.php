@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Cache, Auth, Env;
+use Illuminate\Support\Env;
+use Cache, Auth;
 use App\Models\Product;
 use \Stripe\StripeClient;
 
