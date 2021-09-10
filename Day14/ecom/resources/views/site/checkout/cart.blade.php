@@ -5,12 +5,12 @@
         <div class="container margin_60_40">
             <div class="row justify-content-center">
 
+                
                 <div class="col-xl-10 col-lg-10" id="sidebar_fixed">
                     <div class="box_booking"   style="background: white; padding:4%;">
                         <div class="head">
                             <h3>Order Success</h3> 
-                        </div>
-                        <!-- /head -->
+                        </div> 
                         <div class="main">
                             Your payment was successful, order is now procesing!
                         </div>
