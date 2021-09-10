@@ -16,12 +16,14 @@ class CheckoutController extends Controller
             env('STRIPE_SECRET_KEY')
           );
 
-          $stripe->charges->create([
-            'amount' => 2000,
+          $charge = $stripe->charges->create([
+            'amount' => 20000,
             'currency' => 'usd',
             'source' => 'tok_visa',
             'description' => 'My First Test Charge (created for API docs)',
           ]);
+
+          dd($charge);
 
         $cart = Cache::get('cart') ?? [];
         $items = [];
