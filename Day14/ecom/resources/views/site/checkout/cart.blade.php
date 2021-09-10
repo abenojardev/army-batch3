@@ -39,13 +39,8 @@
                                 </label>
                                 <i class="icon_creditcard"></i>
                             </div>
-                            <div class="form-group"> 
-                                <label>
-                                    Card
-                                    <div id="card-element"></div>
-                                </label> 
-                                <label for="card-element">Card</label>
-                                <div id="card-element" style="float: left; width: 400px; !important"></div>
+                            <div class="form-group">  
+                                <div id="card-element"></div>
                             </div> 
                         </div> 
                     </div> 
@@ -111,4 +106,10 @@
     var cardElement = elements.create('card');
   cardElement.mount('#card-element');
 </script>
+<style>
+    #card-element{
+        float: left; 
+        width: 400px;
+    }
+</style>
 @endsection
