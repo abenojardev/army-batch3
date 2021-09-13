@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table width="650px" height="auto">
+        <tr align="center">
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
