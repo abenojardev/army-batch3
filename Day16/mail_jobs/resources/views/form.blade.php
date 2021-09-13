@@ -16,14 +16,14 @@
                     @csrf
                     <div class="mb-3">
                         <label class="form-label text-white">Email address</label>
-                        <input type="email" class="form-control">
+                        <input name="email" required type="email" class="form-control">
                         <div id="emailHelp" class="form-text">
                             We'll never share your email with anyone else.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label text-white">Message</label>
-                        <textarea class="form-control" rows="5"></textarea>
+                        <textarea name="message" required class="form-control" rows="5"></textarea>
                     </div> 
                     <button type="submit" class="btn btn-warning">Send Email</button>
                 </form>
