@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body style="background-color: #e3e3e3">
-    <table width="650px" height="auto" style="background-color: #FFFF;">
+<body style="background-color: #e3e3e3; margin:0;">
+    <table cellpadding="0" cellspacing="0" width="650px" height="auto" style="background-color: #FFFF;">
         <tr align="center">
             <td>
                 asd
