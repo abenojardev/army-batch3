@@ -12,6 +12,11 @@
             <td>
                 <table cellpadding="0" cellspacing="0" width="650px" height="auto" style="background-color: #FFFF;">
                     <tr align="center">
+                        <td colspan="2">
+                            <h1>Hi Card, You have a new message from Philippine Army.</h1>
+                        </td>
+                    </tr>
+                    <tr align="center">
                         <td>
                             <img width="100%" src="https://www.army.mil.ph/home/images/2020/FEATURED_STORIES/true-story-of-valor1.jpg" alt="">
                         </td>
