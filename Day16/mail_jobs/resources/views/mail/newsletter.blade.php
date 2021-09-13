@@ -15,16 +15,14 @@
                         <td>
                             <img width="100%" src="https://www.army.mil.ph/home/images/2020/FEATURED_STORIES/true-story-of-valor1.jpg" alt="">
                         </td>
-                    </tr>
-                    <tr align="center">
                         <td>
                             <h1>
                                 Outnumbered but Undaunted: A True Story of Valor
                             </h1>
                         </td>
                     </tr> 
-                    <tr align="center">
-                        <td>
+                    <tr>
+                        <td colspan="2">
                             <p style="padding:5%;">
                                 Sometime in April 1990, a certain farmer and his family was harassed by a group belonging to the New People’s Army in Murcia, Negros Occidental Province. Feeling helpless about the injustice he experienced, he approached a Special Forces Company headed by a young captain and informed the soldiers about the presence of the rebels in the area. With the help of the farmer serving as guide, the company commander, Captain Arturo Ortiz immediately formulated a plan to locate the enemy. <br>
                                 On April 6th, then Captain Ortiz led 24 soldiers and 36 Citizen Armed Force Geographical Unit (CAFGU) personnel on an exhausting 11-hour cross-country trek to conduct a raid on a massive NPA training ground. After climbing a steep cliff, Ortiz and his men were able to position themselves on a favorable location as they could fully observe more than 200 rebels holding their graduation ceremony. <br>
@@ -37,6 +35,11 @@
                                 This act of heroism was interpreted in a movie entitled “Kagitingan: A True Story of Valor” by Vishnu Productions and is officially selected by the International Film Festival Manhattan 2020, along with films from other countries including the USA, Canada, Bulgaria, Estonia, India, Japan, Columbia, Spain, Italy, China, Russia, Austria, and Switzerland.#
                                 Watch the trailer here: https://www.youtube.com/watch?v=PStky25VCXU
                             </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: black; width:100%;">
+                            <img width="100%" src="https://www.army.mil.ph/home/images/logo/pa-logo.png" alt="">
                         </td>
                     </tr>
                 </table>
