@@ -37,8 +37,8 @@
                             </p>
                         </td>
                     </tr>
-                    <tr style="width:100%;" align="center">
-                        <td style="background: black; width:100%;">
+                    <tr align="center">
+                        <td style="background: black; width:100%;" colspan="2">
                             <img width="100%" src="https://www.army.mil.ph/home/images/logo/pa-logo.png" alt="">
                         </td>
                     </tr>
