@@ -13,14 +13,15 @@ class MailSenderJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    protected $data;
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -31,10 +32,10 @@ class MailSenderJob implements ShouldQueue
     public function handle()
     {
         $template = new NewsletterMail(
-            $this->request->message
+            $this->data->message
         );
-
-        Mail::to($this->request->email)
+        
+        Mail::to($this->data->email)
             ->send($template);
     }
 }
