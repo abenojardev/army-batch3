@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #e3e3e3">
     <table width="650px" height="auto">
         <tr align="center">
             <td>
