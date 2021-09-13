@@ -15,7 +15,11 @@
                         <td colspan="2">
                             <h1>
                                 <i>
-                                    Hi Cardo, You have a new message from Philippine Army.
+                                    {!! 
+                                        isset($msg) ?
+                                            $msg : 
+                                            'Hi Cardo, You have a new message from Philippine Army.'
+                                    !!}
                                 </i>
                             </h1>
                         </td>
