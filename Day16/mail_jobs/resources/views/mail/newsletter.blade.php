@@ -13,7 +13,7 @@
                 <table cellpadding="0" cellspacing="0" width="650px" height="auto" style="background-color: #FFFF;">
                     <tr align="center">
                         <td>
-                            asd
+                            <img width="100%" src="https://www.army.mil.ph/home/images/2020/FEATURED_STORIES/true-story-of-valor1.jpg" alt="">
                         </td>
                     </tr>
                 </table>
