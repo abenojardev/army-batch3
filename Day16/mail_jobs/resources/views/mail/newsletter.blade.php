@@ -15,7 +15,7 @@
                         <td colspan="2">
                             <h1>
                                 <i>
-                                    Hi Card, You have a new message from Philippine Army.
+                                    Hi Cardo, You have a new message from Philippine Army.
                                 </i>
                             </h1>
                         </td>
@@ -47,7 +47,7 @@
                         </td>
                     </tr>
                     <tr align="center">
-                        <td style="background: black; width:100%;" colspan="2">
+                        <td style="padding:5%; background: black; width:100%;" colspan="2">
                             <img width="100%" src="https://www.army.mil.ph/home/images/logo/pa-logo.png" alt="">
                         </td>
                     </tr>
