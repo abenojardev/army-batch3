@@ -20,10 +20,8 @@ class MailController extends Controller
     }
 
     public function process()
-    { 
-        $data = $this->request->all();
-
-        MailSenderJob::dispatch($data)->onQueue('emails');;
+    {  
+        MailSenderJob::dispatch($this->request->all())->onQueue('emails');;
         
         return back();
     }
