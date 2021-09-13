@@ -21,7 +21,7 @@
                             </h1>
                         </td>
                     </tr> 
-                    <tr>
+                    <tr align="center">
                         <td colspan="2">
                             <p style="padding:5%;">
                                 Sometime in April 1990, a certain farmer and his family was harassed by a group belonging to the New People’s Army in Murcia, Negros Occidental Province. Feeling helpless about the injustice he experienced, he approached a Special Forces Company headed by a young captain and informed the soldiers about the presence of the rebels in the area. With the help of the farmer serving as guide, the company commander, Captain Arturo Ortiz immediately formulated a plan to locate the enemy. <br>
@@ -37,7 +37,7 @@
                             </p>
                         </td>
                     </tr>
-                    <tr>
+                    <tr style="width:100%;" align="center">
                         <td style="background: black; width:100%;">
                             <img width="100%" src="https://www.army.mil.ph/home/images/logo/pa-logo.png" alt="">
                         </td>
