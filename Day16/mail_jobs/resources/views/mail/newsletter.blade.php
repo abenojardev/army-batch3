@@ -10,7 +10,7 @@
     <table cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%">
         <tr align="center">
             <td>
-                <table cellpadding="0" cellspacing="0" width="350px" height="auto" style="background-color: #FFFF;">
+                <table cellpadding="0" cellspacing="0" width="650px" height="auto" style="background-color: #FFFF;">
                     <tr align="center">
                         <td>
                             asd
