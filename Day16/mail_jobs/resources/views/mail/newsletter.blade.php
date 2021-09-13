@@ -13,7 +13,11 @@
                 <table cellpadding="0" cellspacing="0" width="650px" height="auto" style="background-color: #FFFF;">
                     <tr align="center">
                         <td colspan="2">
-                            <h1>Hi Card, You have a new message from Philippine Army.</h1>
+                            <h1>
+                                <i>
+                                    Hi Card, You have a new message from Philippine Army.
+                                </i>
+                            </h1>
                         </td>
                     </tr>
                     <tr align="center">
