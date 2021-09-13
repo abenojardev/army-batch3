@@ -23,7 +23,7 @@ class MailController extends Controller
     { 
         $data = $this->request->all();
 
-        MailSenderJob::dispatch()->withData($data);
+        MailSenderJob::dispatch($data)->onQueue('emails');;
         
         return back();
     }
