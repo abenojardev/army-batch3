@@ -11,14 +11,16 @@ class NewsletterMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $msg;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($msg = null)
     {
-        //
+        $this->msg = $msg;
     }
 
     /**
