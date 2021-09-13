@@ -30,6 +30,8 @@ class NewsletterMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('mail.newsletter')->with([
+            'msg' => $this->msg
+        ]);
     }
 }
