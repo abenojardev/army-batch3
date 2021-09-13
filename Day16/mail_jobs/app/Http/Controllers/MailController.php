@@ -22,6 +22,10 @@ class MailController extends Controller
 
     public function process()
     {
-        dd($this->request->all());
+        $template = new NewsletterMail(
+            $this->request->message
+        );
+
+        
     }
 }
