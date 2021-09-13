@@ -22,7 +22,9 @@ class MailController extends Controller
     public function process()
     {  
         dispatch(
-            new MailSenderJob($this->request->all()) 
+            new MailSenderJob(
+                $this->request->all()
+            ) 
         )->onQueue('emails');
         
         return back();
