@@ -20,9 +20,12 @@ class MailController extends Controller
     }
 
     public function process()
-    {
-        
-    
+    { 
+        $job = new MailSenderJob(
+            $this->request->all()
+        );
+
+        dispatch($job);
         
         return back();
     }
