@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Mail\NewsletterMail;
-use Mail;
 
 class MailController extends Controller
 {
@@ -22,12 +20,7 @@ class MailController extends Controller
 
     public function process()
     {
-        $template = new NewsletterMail(
-            $this->request->message
-        );
-
-        Mail::to($this->request->email)
-            ->send($template);
+        
     
         
         return back();
