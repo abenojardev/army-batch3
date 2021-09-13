@@ -35,10 +35,10 @@ class MailSenderJob implements ShouldQueue
     public function handle()
     {
         $template = new NewsletterMail(
-            $this->data->message
+            $this->data['message']
         );
         
-        Mail::to($this->data->email)
+        Mail::to($this->data['email'])
             ->send($template);
     }
 }
