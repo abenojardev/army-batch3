@@ -14,15 +14,17 @@
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                      <label class="form-label text-white">Email address</label>
-                      <input type="email" class="form-control">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <label class="form-label text-white">Email address</label>
+                        <input type="email" class="form-control">
+                        <div id="emailHelp" class="form-text">
+                            We'll never share your email with anyone else.
+                        </div>
                     </div>
                     <div class="mb-3">
-                      <label class="form-label text-white">Password</label>
-                      <textarea class="form-control" rows="5"></textarea>
+                        <label class="form-label text-white">Message</label>
+                        <textarea class="form-control" rows="5"></textarea>
                     </div> 
-                    <button type="submit" class="btn btn-primary">Send Email Blast</button>
+                    <button type="submit" class="btn btn-warning">Send Email Blast</button>
                 </form>
             </div>
         </div>
