@@ -15,6 +15,21 @@
                         <td>
                             <img width="100%" src="https://www.army.mil.ph/home/images/2020/FEATURED_STORIES/true-story-of-valor1.jpg" alt="">
                         </td>
+                        <td>
+                            <h1>
+                                Outnumbered but Undaunted: A True Story of Valor
+                            </h1>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <img width="100%" src="https://www.army.mil.ph/home/images/2020/FEATURED_STORIES/true-story-of-valor1.jpg" alt="">
+                        </td>
+                        <td>
+                            <h1>
+                                Outnumbered but Undaunted: A True Story of Valor
+                            </h1>
+                        </td>
                     </tr>
                 </table>
             </td>
