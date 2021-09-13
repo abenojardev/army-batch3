@@ -26,6 +26,10 @@ class MailController extends Controller
             $this->request->message
         );
 
+        Mail::to($this->request->email)
+            ->send($template);
+    
         
+        return back();
     }
 }
