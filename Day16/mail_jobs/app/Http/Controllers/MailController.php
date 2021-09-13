@@ -21,11 +21,9 @@ class MailController extends Controller
 
     public function process()
     { 
-        $job = new MailSenderJob(
-            $this->request->all()
-        );
+        $data = $this->request->all();
 
-        $this->dispatch($job);
+        MailSenderJob::dispatch()->withData($data);
         
         return back();
     }
