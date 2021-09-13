@@ -25,7 +25,7 @@ class MailController extends Controller
             $this->request->all()
         );
 
-        dispatch($job);
+        $this->dispatch($job);
         
         return back();
     }
