@@ -17,4 +17,9 @@ class MailController extends Controller
     {
         return view('form');
     }
+
+    public function process()
+    {
+        dd($this->request->all());
+    }
 }
