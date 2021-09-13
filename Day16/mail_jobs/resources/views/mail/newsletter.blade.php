@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: #e3e3e3">
-    <table width="650px" height="auto">
+    <table width="650px" height="auto" style="background-color: #FFFF;">
         <tr align="center">
             <td>
                 asd
