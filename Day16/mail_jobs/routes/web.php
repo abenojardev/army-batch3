@@ -8,3 +8,6 @@ Route::get('/',[
     MailController::class,
     'index'
 ]);
+
+
+Route::view('/mail', 'mail.newsletter');
