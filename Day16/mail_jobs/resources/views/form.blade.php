@@ -12,7 +12,8 @@
     <div class="container">
         <div class="row d-flex justify-content-center mt-5 pt-5"> 
             <div class="col-6">
-                <form>
+                <form action="{{ URL::route('form.process') }}" method="post">
+                    @csrf
                     <div class="mb-3">
                         <label class="form-label text-white">Email address</label>
                         <input type="email" class="form-control">

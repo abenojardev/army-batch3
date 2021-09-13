@@ -14,5 +14,4 @@ Route::post('/process',[
     'process'
 ])->name('form.process');
 
-
 Route::view('/mail', 'mail.newsletter');
