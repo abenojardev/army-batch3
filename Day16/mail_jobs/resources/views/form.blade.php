@@ -24,7 +24,7 @@
                         <label class="form-label text-white">Message</label>
                         <textarea class="form-control" rows="5"></textarea>
                     </div> 
-                    <button type="submit" class="btn btn-warning">Send Email Blast</button>
+                    <button type="submit" class="btn btn-warning">Send Email</button>
                 </form>
             </div>
         </div>
