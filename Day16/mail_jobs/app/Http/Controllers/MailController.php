@@ -10,11 +10,11 @@ class MailController extends Controller
 
     public function __construct(Request $request)
     {
-
+        $this->request = $request;
     }
-    
+
     public function index()
     {
-
+        return view('form');
     }
 }
