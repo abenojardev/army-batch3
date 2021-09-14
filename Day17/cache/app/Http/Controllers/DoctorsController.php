@@ -30,11 +30,9 @@ class DoctorsController extends Controller
         // avg 2s
         $process_start = microtime(true);
  
-        if(Cache::has('doctors')){
-            dd('get');
+        if(Cache::has('doctors')){ 
             $doctors = Cache::get('doctors');
-        } else { 
-            dd('save');
+        } else {  
             $doctors = Doctor::all();
             Cache::put('doctors', $doctors);
         } 
