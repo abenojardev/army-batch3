@@ -14,6 +14,16 @@
         Load time : <span id="load_time"></span>
     </h1>
 
+    <ul>
+        @foreach($doctors as $doctor)
+            <li>
+                {{ $doctor->name }}
+            </li>
+        @endforeach
+    </ul>
 
+    <script>
+
+    </script> 
 </body>
 </html>
