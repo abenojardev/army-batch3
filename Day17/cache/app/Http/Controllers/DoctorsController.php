@@ -9,6 +9,7 @@ class DoctorsController extends Controller
 {
     public function index()
     {
+        // avg 2s
         $process_start = microtime(true);
 
         $doctors = Doctor::all();
@@ -17,6 +18,7 @@ class DoctorsController extends Controller
         $execution_time = $process_end - $process_start;
 
         dd(
+            $doctors,
             'Fetching 500,000 records in '.$execution_time.'s'
         );
     }
