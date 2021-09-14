@@ -25,7 +25,7 @@
     <script>
         window.onload = () => {
             loadTime = parseInt(
-                window.performace.timing.domContentLoadedEventEnd 
+                window.performance.timing.domContentLoadedEventEnd 
                 - 
                 window.performance.timing.navigationStart
             ) / 1000;
