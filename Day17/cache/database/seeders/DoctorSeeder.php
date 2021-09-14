@@ -14,6 +14,13 @@ class DoctorSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $batch = 100000;
+
+        for ($i=0; $i <= $batch; $i++) { 
+        
+            Doctor::create([
+                'name' =>
+            ]);
+        }
     }
 }
