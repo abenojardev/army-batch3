@@ -17,10 +17,10 @@ class DoctorsController extends Controller
         $process_end = microtime(true);
         $execution_time = $process_end - $process_start;
 
-        dd(
-            $doctors,
-            'Fetching 500,000 records in '.$execution_time.'s'
-        );
+        return view('index')->with([
+            'doctors' => $doctors,
+            'execution_time' => $execution_time
+        ]);
     }
 
     public function with_cache()
