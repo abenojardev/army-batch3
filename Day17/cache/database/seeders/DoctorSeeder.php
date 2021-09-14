@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Doctor;
+use Str;
 
 class DoctorSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class DoctorSeeder extends Seeder
         for ($i=0; $i <= $batch; $i++) { 
         
             Doctor::create([
-                'name' =>
+                'name' => Str::random(15)
             ]);
         }
     }
