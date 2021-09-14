@@ -23,7 +23,9 @@
     </ul>
 
     <script>
-
+        window.onload = () => {
+            alert('asd');
+        }
     </script> 
 </body>
 </html>
