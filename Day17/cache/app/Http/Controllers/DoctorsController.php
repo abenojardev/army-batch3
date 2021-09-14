@@ -31,16 +31,17 @@ class DoctorsController extends Controller
         $process_start = microtime(true);
  
         if(Cache::has('doctors')){
+            dd('get');
             $doctors = Cache::get('doctors');
-        } else {
-            dd('as');
+        } else { 
+            dd('save');
             $doctors = Doctor::all();
             Cache::put('doctors', $doctors);
         } 
 
         $process_end = microtime(true);
         $execution_time = $process_end - $process_start;
-
+        dd($execution_time);
         return view('index')->with([
             'doctors' => $doctors,
             'execution_time' => $execution_time
