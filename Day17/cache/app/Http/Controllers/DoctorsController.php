@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Doctors;
 
 class DoctorsController extends Controller
 {
@@ -10,10 +11,10 @@ class DoctorsController extends Controller
     {
 
     }
-    
+
     public function with_cache()
     {
 
     }
-    
+
 }
