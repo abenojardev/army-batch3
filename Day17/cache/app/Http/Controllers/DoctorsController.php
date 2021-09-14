@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Doctor;
+use Cache;
 
 class DoctorsController extends Controller
 {
@@ -25,7 +26,9 @@ class DoctorsController extends Controller
 
     public function with_cache()
     {
-
+        // file driver
     }
+
+    // redis driver
 
 }
