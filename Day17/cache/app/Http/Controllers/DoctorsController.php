@@ -6,5 +6,14 @@ use Illuminate\Http\Request;
 
 class DoctorsController extends Controller
 {
-    //
+    public function index()
+    {
+
+    }
+    
+    public function with_cache()
+    {
+
+    }
+    
 }
