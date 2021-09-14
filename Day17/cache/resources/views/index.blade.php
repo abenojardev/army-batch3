@@ -29,6 +29,8 @@
                 - 
                 window.performance.timing.navigationStart
             ) / 1000;
+
+            document.getElementById('load_time').innerHTML = loadTime;
         }
     </script> 
 </body>
