@@ -12,6 +12,9 @@ class DoctorsController extends Controller
         $process_start = microtime(true);
 
         $doctors = Doctors::all();
+
+        $process_end = microtime(true);
+        $execution_time = $process_end - $process_start;
     }
 
     public function with_cache()
