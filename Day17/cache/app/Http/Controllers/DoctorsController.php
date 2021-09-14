@@ -35,9 +35,8 @@ class DoctorsController extends Controller
         } else {
             $doctors = Doctor::all();
             Cache::put('doctors', $doctors);
-        }
-
-
+        } 
+        
         $process_end = microtime(true);
         $execution_time = $process_end - $process_start;
 
