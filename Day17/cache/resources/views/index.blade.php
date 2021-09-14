@@ -24,7 +24,11 @@
 
     <script>
         window.onload = () => {
-            alert('asd');
+            loadTime = parseInt(
+                window.performace.timing.domContentLoadedEventEnd 
+                - 
+                window.performance.timing.navigationStart
+            ) / 1000;
         }
     </script> 
 </body>
