@@ -9,7 +9,9 @@ class DoctorsController extends Controller
 {
     public function index()
     {
+        $process_start = microtime(true);
 
+        $doctors = Doctors::all();
     }
 
     public function with_cache()
