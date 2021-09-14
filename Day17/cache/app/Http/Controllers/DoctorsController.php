@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Doctors;
+use App\Models\Doctor;
 
 class DoctorsController extends Controller
 {
@@ -11,7 +11,7 @@ class DoctorsController extends Controller
     {
         $process_start = microtime(true);
 
-        $doctors = Doctors::all();
+        $doctors = Doctor::all();
 
         $process_end = microtime(true);
         $execution_time = $process_end - $process_start;

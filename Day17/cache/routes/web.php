@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\DoctorsController;
+use App\Http\Controllers\DoctorsController;
 
 Route::get('/', [
     DoctorsController::class,
