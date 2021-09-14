@@ -17,8 +17,7 @@ class DoctorSeeder extends Seeder
     {
         $batch = 100000;
 
-        for ($i=0; $i <= $batch; $i++) { 
-        
+        for ($i=0; $i <= $batch; $i++) {  
             Doctor::create([
                 'name' => Str::random(15)
             ]);
