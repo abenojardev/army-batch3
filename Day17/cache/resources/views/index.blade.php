@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>
+        Execution time : {{ $execution_time }}
+    </h1>
+    <h1>
+        Load time : <span id="load_time"></span>
+    </h1>
+
+
 </body>
 </html>
