@@ -29,14 +29,15 @@ class DoctorsController extends Controller
         // file driver 
         // avg 2s
         $process_start = microtime(true);
-
+ 
         if(Cache::has('doctors')){
             $doctors = Cache::get('doctors');
         } else {
+            dd('as');
             $doctors = Doctor::all();
             Cache::put('doctors', $doctors);
         } 
-        
+
         $process_end = microtime(true);
         $execution_time = $process_end - $process_start;
 
