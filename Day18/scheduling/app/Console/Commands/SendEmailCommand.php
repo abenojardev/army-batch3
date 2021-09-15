@@ -11,7 +11,7 @@ class SendEmailCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'send:email';
 
     /**
      * The console command description.
