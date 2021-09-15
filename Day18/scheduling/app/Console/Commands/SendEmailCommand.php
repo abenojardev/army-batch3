@@ -38,6 +38,8 @@ class SendEmailCommand extends Command
      */
     public function handle()
     {
-        return 0;
+        dispatch(
+            new EmailSenderJob()
+        );
     }
 }
