@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Doctor;
-use Cache;
+use App\Models\Doctor; 
+use Cache, Redis;
 
 class DoctorsController extends Controller
 {
@@ -25,23 +25,23 @@ class DoctorsController extends Controller
     }
 
     public function with_cache()
-    {
+    { 
         // file driver 
         // avg 2s
         $process_start = microtime(true);
- 
-        if(Cache::has('doctors')){ 
-            $doctors = Cache::get('doctors');
-        } else {  
-            $doctors = Doctor::all();
-            Cache::put('doctors', $doctors);
+         
+        
+        if(is_null(Redis::get('doctors'))){  
+            Redis::set('doctors', Doctor::limit(50000)->get());
         } 
+
+        $doctors = Redis::get('doctors'); 
 
         $process_end = microtime(true);
         $execution_time = $process_end - $process_start;
-        dd($execution_time);
-        return view('index')->with([
-            'doctors' => $doctors,
+        
+        return view('redis')->with([
+            'doctors' => json_decode($doctors),
             'execution_time' => $execution_time
         ]);
     }
