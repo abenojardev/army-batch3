@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Jobs\EmailSenderJob;
 
 class SendEmailCommand extends Command
 {
@@ -18,7 +19,7 @@ class SendEmailCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Sends an email';
 
     /**
      * Create a new command instance.
