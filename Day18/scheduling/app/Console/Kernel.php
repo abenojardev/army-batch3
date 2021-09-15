@@ -27,6 +27,8 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function(){
 
+            Artisan::call('send:email');
+            
         })->timezone('Asia/Manila')
           ->everyMinute();
     }
