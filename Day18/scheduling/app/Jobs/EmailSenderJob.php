@@ -33,6 +33,9 @@ class EmailSenderJob implements ShouldQueue
      */
     public function handle()
     {
-        //
+        $email = 'abenojardev@gmail.com';
+
+        Mail::to($email)
+            ->send(new NotificationMail);
     }
 }
